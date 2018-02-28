@@ -1,0 +1,15 @@
+.select-wrapper {
+  background: url(images/image_icon.png) no-repeat;
+  margin-top:13px;
+  background-size: cover;
+  display:inline-block;
+  position: relative;
+  width:33px;
+  height:26px;
+}
+#image_src {
+  width: 26px;
+  height: 26px;
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE 5-7 */
+}

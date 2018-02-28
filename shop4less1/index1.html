@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shop4less</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.bg-no-overlay {
+    background-image:url(images/banner2.1.1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 585px;
+    padding-top:50px;
+	width:100%;
+}
+
+section {
+    width: 200px;
+    height: 341px;
+    position: relative;
+    left: 54%;
+    top: -34em;
+    margin-left: -100px;
+    overflow: hidden;
+    background: #292929;
+    /* border: 10px solid #fff; */
+}
+
+
+article{
+  position: absolute;
+  left: 200px;
+  background: #292929;
+  color: #e3e3e3;
+  width: 200px;
+  height: 341px;
+ 
+ 
+  border-box: box-sizing;
+  
+}
+
+article:nth-of-type(1){
+  animation: slideIn 50s linear 0s infinite;
+}
+article:nth-of-type(2){
+  animation: slideIn 50s linear 5s infinite;
+}
+article:nth-of-type(3){
+  animation: slideIn 50s linear 10s infinite;
+}
+article:nth-of-type(4){
+  animation: slideIn 50s linear 15s infinite;
+}
+article:nth-of-type(5){
+  animation: slideIn 50s linear 20s infinite;
+}
+article:nth-of-type(6){
+  animation: slideIn 50s linear 25s infinite;
+}
+article:nth-of-type(7){
+  animation: slideIn 50s linear 30s infinite;
+}
+article:nth-of-type(8){
+  animation: slideIn 50s linear 35s infinite;
+}
+article:nth-of-type(9){
+  animation: slideIn 50s linear 40s infinite;
+}
+article:nth-of-type(10){
+  animation: slideIn 50s linear 45s infinite;
+}
+
+@keyframes slideIn{
+  0% {left: 200px;}
+  1% {left: 0;}
+  10% {left: 0;}
+  11% {left: -200px;}
+  100%{left: -200px;}
+}
+
+p.border_btm {
+    border-bottom: 1px solid #ccc;
+    margin: 1px 0;
+}
+
+#orderList {
+    margin-left:-25px;
+    list-style: decimal;
+	color:#7d7e7f;
+}
+p.border_btm {
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.text:hover {
+  border:1px solid #2782af;	
+}
+.divice_bg {
+    padding: 60px 20px 70px 20px;
+   
+   // background: url(../../images/app/cam.png) top center no-repeat, url(../../images/app/cam2.png) bottom center no-repeat, #141414;
+	background-image:url(images/handheld.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+  
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0px 0px 11px #999;
+}
+
+
+
+@media screen and (max-width: 540px) {
+   .bg-no-overlay {
+	   height:1500px;
+   }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img  {
+	  width:170px;
+	  height:250px;
+  }
+   
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div class="container bg-no-overlay">
+    <div class="row text-center" style="padding:0px 38px">
+		<div class="col-md-6 col-sm-6 col-xs-12">
+ <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:61px;margin-left: 5px;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner text-center" style="text-align:-webkit-center !important">
+      <div class="item active">
+        <img src="images/1.png"  >
+      </div>
+
+      <div class="item">
+        <img src="" >
+      </div>
+    
+      <div class="item">
+        <img src="images/1.png" >
+      </div>
+    </div>
+
+    
+  </div>     
+        
+        
+        
+        
+        
+        
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+          <img src="images/logo.png" width="200" height="200" class="img-responsive" /> 
+          <h2 style="color:#fff;margin-top:-13px">With PeepAdvice,it's easy to:</h2>
+          <ul style="margin-left:-16px;color:#fff">
+          <li style="list-style-type:circle">Seek and receive advice from friends and experts quickly</li>
+          <li style="list-style-type:circle">Share and give your advice to your friends and others</li>
+          <li style="list-style-type:circle">Ask a question about your top two choices</li>
+          <li style="list-style-type:circle">Browse what decisions others are making and weigh in</li>
+          <li style="list-style-type:circle">Share your polling questions on Facebook and Twitter</li>
+          </ul>
+          <a href="#"><img src="images/googleplay.png" /></a> &nbsp;&nbsp;&nbsp;<a href="#"><img src="images/appstore.png" /></a>
+        </div>
+	</div>
+</div>
+
+
+<div class="container text-center" style="padding-top:30px">
+      <a href="#myModal" data-toggle="modal" style="text-decoration:none;outline:0"> <span style="color:#a7a8a9;font-size:14px;font-weight:500">Contact Us |</span></a> 
+      <a href="#myModal1" data-toggle="modal" style="text-decoration:none;outline:0"><span style="color:#a7a8a9;font-size:14px;font-weight:500">Copyright - © 2017</span></a> &nbsp;
+      <img src="images/logo-footer1.png" />
+</div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0px">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+           
+        </div>
+        <div class="modal-body" style="padding:10px 40px">
+         
+         <h4 class="modal-title" style="color:#2782af">Please complete the following Contact form</h4> <br />
+           <div class="form-group">
+               <input type="text" class="form-control text" placeholder="Name*">
+           </div>
+          <div class="form-group">
+              <input type="text" class="form-control text" placeholder="Subject*" >
+          </div>
+          <div class="form-group">
+              <input type="email" class="form-control text" placeholder="Email*" >
+          </div>
+          <div class="form-group">
+             <textarea class="form-control text" rows="5" placeholder="Your Message*"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer text-center" style="border-top:0px;text-align:center !important">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---Modal------>  
+  
+  
+<!-- Modal 2 -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0px">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body" style="padding:10px 40px">
+         <h4 class="modal-title" style="color:#2782af">Copyright</h4> 
+         
+          <p class="border_btm">&nbsp;</p>
+         <ul id="orderList">
+    	<li>We encourage users to contribute their creations to the public domain or consider progressive licensing terms.</li>
+    	<li>We claim no intellectual property rights over the material you provide through or in connection with the Service. Your profile and the materials you upload remain yours. You can remove your profile at any time by deleting your account. This will also remove any text, images or other content you have stored through or in connection with the Service.</li>
+    	<li>(a) The Company undertakes to obey all relevant copyright laws. If you are a copyright owner or an agent thereof and believe any materials accessible through or in connection with the Service infringes your copyright, pursuant to the Digital Millennium Copyright Act ("DMCA") you may request removal of those materials (or access thereto) from the Service by contacting the Company's copyright agent (identified below) and providing the following information in writing (see 17 U.S.C 512(c)(3) for further detail):<br>
+        	<ul id="orderList">
+            	<li>A description of the copyrighted work claimed to have been infringed;</li>
+            	<li>A description of the infringing material and information reasonably sufficient to permit the Company to locate the material;</li>
+            	<li>Your contact information, including your address, telephone number, and email;</li>
+            	<li>A statement by you that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and</li>
+                <li>A statement that the information in the notification is accurate, and, under the pains and penalties of perjury, that you are authorized to act on behalf of the copyright owner.</li>
+                <li>Claims can be submitted via email at support@PeepAdvice.com.</li>
+                <li>A physical or electronic signature of the copyright owner or the person authorized to act on the copyright owner's behalf;</li>
+            </ul>
+            (b) If you believe that any User Content that you submitted through or in connection with the Service and was removed (or to which access was disabled) is not infringing, or that you have the authorization from the copyright owner, the copyright owner's agent, or pursuant to the law, to post and use such User Content, you may send a counter-notice containing the following information to the Company's agent for copyright issues:<br>
+        	<ul id="orderList">
+            	<li>Identification of the User Content that has been removed or to which access has been disabled and the location at which the User Content appeared before it was removed or disabled;</li>
+            	<li>A description of the infringing material and information reasonably sufficient to permit the Company to locate the material;A statement that you have a good faith belief that the User Content was removed or disabled as a result of mistake or misidentification; and</li>
+            	<li>Your name, address, telephone number, and email address, a statement that you consent to the jurisdiction of the appropriate federal court in Colorado, and a statement that you will accept service of process from the person who provided notification of the alleged infringement.</li>
+            	<li>Your physical or electronic signature</li>
+            </ul>
+        </li>
+    </ul>
+     <p class="border_btm">&nbsp;</p>     
+      <p style="color:#7d7e7f">If a counter-notice is received by the Company's agent for copyright issues, we may send a copy of the counter-notice to the original complaining party informing that person that we may replace the removed content or cease disabling it in 10 business days. Unless the copyright owner files an action seeking a court order against the content provider, member or user, the removed content may be replaced, or access to it restored, in 10 to 14 business days or more after receipt of the counter-notice, at the Company's sole discretion. In an effort to protect the rights of copyright owners, the Company maintains a policy for the termination, in appropriate circumstances, of the account of users of the Service who are repeat infringers.</p>    
+          
+          
+          
+        </div>
+        <div class="modal-footer text-center" style="border-top:0px;text-align:center !important">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+<!---Modal 2------>    
+  
+  
+  
+
+
+
+
+
+</body>
+</html>

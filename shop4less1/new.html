@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
+
+<style type="text/css">
+header {
+    width: 100%;
+    height: 583px;
+    background: #181810 url(../images/hero.jpg) no-repeat center center;
+}
+.row, .clearfix {
+    zoom: 1;
+}
+#handheld {
+    position: relative;
+    height: 583px;
+}
+
+.container .nine.columns {
+    width: 520px;
+}
+
+.container .column, .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#handheld img {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+<header>
+	<div class="container clearfix">
+			<!-- Handheld -->	
+			<div id="handheld" class="nine columns">
+				<img src="images/handheld.png" alt="iPhone" width="500">
+				<div id="iphone_container" style="padding-left:227px;">
+				    <ul id="iphoneul">
+						<li id="phoneimg0" class="images" style="display: none; opacity: 0;"><img src="images/1.png" style="padding-bottom:130px;"></li>
+						<li id="phoneimg1" class="images" style="opacity: 1;"><img src="shop/1.png"  style="padding-bottom:130px;"></li>
+						<li id="phoneimg2" class="images" style="opacity: 0;"><img src="images/1.png" style="padding-bottom:130px;"></li>
+    					<li id="phoneimg3" class="images" style="opacity: 0;"><img src="images/1.png" style="padding-bottom:130px;"></li>
+    					<li id="phoneimg4" class="images" style="opacity: 0;"><img src="images/1.png" style="padding-bottom:130px;"></li>
+				     </ul>
+		 		</div>
+			</div>
+			<!-- End Handheld -->
+			
+			<!-- Hello -->
+			<div id="hello" class="seven columns offset-by-one">
+				<img src="images/logo.png" alt="Candy" width="149">
+				<h1>With PeepAdvice,<br>it's easy to:</h1>
+				<ul>
+				<li>Seek and receive advice from friends and experts quickly</li>
+<li>Share and give your advice to your friends and others</li>
+<li>Ask a question about your top two choices</li>
+<li>Browse what decisions others are making and weigh in</li>
+<li>Share your polling questions on Facebook and Twitter</li>
+</ul>
+				<a href="https://itunes.apple.com/us/app/peepadvice/id639594092?ls=1&amp;mt=8" target="_blank"><img src="images/app-store-button-blue.png" style="width:50%; padding-top:20px;"></a>
+				
+			</div>
+			<!-- End Hello -->
+			
+		</div><!-- END CONTAINER -->
+</header>
+
+<script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript">
+			$(document).ready(function(){
+
+
+				// starts the spinning
+
+				setTimeout(function(){
+
+     			$('html').addClass("loaded");
+
+   				}, 1);
+
+			
+
+
+			}); // document ready
+			
+			$(function() {
+
+				// for iphone slider
+
+				var iphoneLength = $('#iphoneul li').length;
+
+				var timerPhone = setInterval( phoneSlider, 5000);	
+				
+				var counter2 = 0;	
+
+				 
+					function phoneSlider() {
+				    if (counter2 ==0) { counter2++; return; }
+				    
+				    $('#phoneimg0').hide();
+				    $('li','#iphoneul')
+				      .stop()
+				      .animate({
+				      	opacity:0
+				      }, 100)
+				      .filter( function() { return this.id.match('phoneimg' + counter2); })   
+				      .animate({
+				      	opacity:1
+				      }, 300)
+				    counter2 == iphoneLength-1? counter2 = 0 : counter2++; 
+				  }
+
+
+				var textLength = $('#textlength li').length;
+ 
+				  var timer = setInterval( showDiv, 4000);
+				   
+				  var counter = 0;
+				  
+				  function showDiv() {
+				    if (counter ==0) { counter++; return; }
+				    
+				    $('#div0').hide();
+				    $('li','#div')
+				      .stop()
+				      .animate({
+				      	opacity:0
+				      }, 100)
+				      .hide()
+				      .filter( function() { return this.id.match('div' + counter); })   
+				      .animate({
+				      	opacity:1,
+				      	marginLeft:0
+				      }, 300)
+				      .show();
+				      $('.storeicon').css('margin-left','-400px');
+				    counter == textLength-1? counter = 0 : counter++; 
+				  }
+
+});
+    </script>
+
+
+
+</body>
+</html>

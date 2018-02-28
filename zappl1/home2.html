@@ -1,0 +1,700 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Zappl</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
+<link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.ckeditor.com/4.6.1/standard-all/ckeditor.js"></script>
+<script src="js/ckeditor1.js"></script>
+
+
+
+<script>
+$(document).ready(function(){
+    $("#img_reply1").click(function(){
+        $("#textfield1").show(10);
+		$(".btn_show1").show(10);
+		$("#textfield2").hide(10);
+		$(".btn_show2").hide(10);
+		$("#textfield3").hide(10);
+		$(".btn_show3").hide(10);
+		
+     });
+	 $("#img_reply2").click(function(){
+        $("#textfield2").show(10);
+		$(".btn_show2").show(10);
+		$("#textfield1").hide(10);
+		$(".btn_show1").hide(10);
+		$("#textfield3").hide(10);
+		$(".btn_show3").hide(10);
+		
+     });
+	  $("#img_reply3").click(function(){
+        $("#textfield3").show(10);
+		$(".btn_show3").show(10);
+		 $("#textfield2").hide(10);
+		$(".btn_show2").hide(10);
+		$("#textfield1").hide(10);
+		$(".btn_show1").hide(10);
+		
+     }); 
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $("#sub_edit").click(function(){
+        $("#sub_hide").hide(10);
+		$("#edit_sec").show(10);
+		   
+	});
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+   $(".ex").click(function(){
+       $("#myModalupload").show();
+     });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+
+
+<style type="text/css">
+body.article-editor {
+    font-size:1em;
+    font-family:'Roboto', serif;
+    font-weight:300;
+}
+
+body.article-editor .illustration {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+body.article-editor ul {
+    overflow: hidden;
+}
+
+body.article-editor h1, h2 {
+    color: #8A4A33;
+    padding-top: 10px;
+}
+
+.image-illustration {
+    background-color: white;
+}
+
+.embed-240p {
+    max-width: 426px;
+    max-height: 240px;
+    margin:0 auto;
+}
+
+.embed-360p {
+    max-width: 640px;
+    max-height: 360px;
+    margin:0 auto;
+}
+
+.embed-480p {
+    max-width: 854px;
+    max-height: 480px;
+    margin:0 auto;
+}
+
+.embed-720p {
+    max-width: 1280px;
+    max-height: 720px;
+    margin:0 auto;
+}
+.embed-1080p {
+    max-width: 1920px;
+    max-height: 1080px;
+    margin:0 auto;
+}
+.ex {
+	padding:10px 2px;
+	height:35px;
+    transition: all 0.5s ease;
+}
+
+.hover_eff {
+   background-color:#fff;
+   color:#333;
+}
+
+.select-wrapper {
+  background: url(images/image_icon.png) no-repeat;
+  margin-top:13px;
+  background-size: cover;
+  display:inline-block;
+  position: relative;
+  width:33px;
+  height:26px;
+}
+#image_src {
+  width: 26px;
+  height: 26px;
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE 5-7 */
+}
+
+.select-wrapper2 {
+  background:url(images/youtube.png) no-repeat;
+  margin-top:13px;
+  background-
+  size: cover;
+  display:inline-block;
+  position: relative;
+  width:33px;
+  height:26px;
+}
+#image_src2 {
+  width: 26px;
+  height: 26px;
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE 5-7 */
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="container">
+<!------navbar------------->
+<nav class="navbar " style="border-radius:0px;overflow-y:hidden">
+  <div class="container">
+    <div class="navbar-header pad_left" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:15px">
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>                        
+      </button>
+      <a class="navbar-brand " href="#"><img src="images/8.png"  class="pull-left img_mar" /></a>
+      <form class="navbar-form navbar-left navbrand" style="margin-top:10px">
+           <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search Post..." style="-webkit-box-shadow:none !important">
+                  <div class="input-group-btn" >
+                      <button class="btn btn-default" type="submit" style="height:34px;border-left:0px">
+                         <i class="fa fa-search" style="color:#717f88"></i>
+                      </button>
+                 </div>
+          </div>
+      </form>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right col-md-7 col-sm-7 col-xs-6 text-center pad_right set_nav" >
+      
+        <li class="active set_nav1 set_nav2"><img src="images/1.png" /><a href="home.html" style="color:#fff;border-bottom:5px solid #fff">Home</a></li>
+        <li class="set_nav1 set_nav3"><img src="images/2.png" /><a href="comments.html" style="color:#fff;">Comments</a></li>
+        <li class="set_nav1"><img src="images/3.png" /><a href="wallet.html" style="color:#fff;">Wallet</a></li>
+        <li class="set_nav1"><img src="images/4.png" /><a href="messages.html" style="color:#fff;">Messages</a></li>
+        <li class="set_nav1 fifth_li"><img src="1/images/line1.png" style="margin-top:10px"></li>
+        <a href="profile.html"><li class="set_nav1"><img src="images/z5.png" style="margin-top:6px" /></li></a>
+        <a href="setting_public_profile.html"  data-toggle="tooltip" title="Settings"><li class="set_nav1"><img src="images/6.png" style="margin-top:9px" /></li></a>
+        <a href="#" data-toggle="tooltip" title="Log Out"><li class="set_nav1"><img src="images/logout.png" style="margin-top:10px"></li></a>
+       </ul>
+      
+    </div>
+  </div>
+</nav>
+<!------navbar------------->
+
+
+<div id="body" class="width">
+
+<!-----------------------------------------------------first side section------------------------------------------>
+<aside class="sidebar small-sidebar left-sidebar" style="margin-top:0px">
+       <ul>	
+          <li>
+              <ul>
+                  <div class="col-md-12 four_sec " style="padding:0px">
+                     <li style="border-radius:5px 5px 0px 0px;width:100%;height:120px;list-style-type:none !important;background-image:                      url(1/images/gr_1.png);background-repeat:no-repeat;background-size:cover;margin-left:-2px">
+                     </li>
+                     <li class="text-center" style="background-color:#fff;border-bottom:1px solid #e5ebef;text-align:-webkit-center;text-align:-moz-center                      ;list-style-type:none !important;border-left:1px solid #e1e8ed;border-right:1px solid #e1e8ed;margin-top:-10px;">
+                           <img src="images/z8.png" height="113" width="115" class="img-responsive" style="z-index:1;margin-top:-80px;"/>
+                           <a href="#"> <h3 style="color:#292f33;margin-bottom:0px;font-weight:bold">Zappl</h3></a>
+                           <a href="#"><span style="color:#8899a6">@zappl_zappl</span></a>
+                     </li>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center pad_zero" style="background-color:#fff;border:1px solid  #e1e8ed;border-top:0px;                     border-radius:0px 0px 5px 5px">
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding:10px 0px;">
+                             <div class="col-md-12" style="padding:0px;border-right:1px solid  #e1e8ed" >
+                                   <a href="#"><h6 class="head_text">POST</h6></a>
+                                   <a href="#"><h6 style="color:#0072bb;font-size:16px;font-weight:600;letter-spacing:0.6px">100</h6></a>
+                             </div>   
+                       </div>
+                       <div class="col-md-4 col-sm-4 col-xs-4" style="padding:10px 0px;">
+                            <div class="col-md-12" style="padding:0px;border-right:1px solid  #e1e8ed" >
+                                  <a href="#"><h6 class="head_text">FOLLOWING</h6></a>
+                                  <a href="#"><h6 style="color:#0072bb;font-size:16px;font-weight:600;letter-spacing:0.6px">200</h6></a>
+                            </div>  
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-4" style="padding:10px 0px;">
+                          <div class="col-md-12" style="padding:0px;" >
+                                 <a href="#"><h6 class="head_text">FOLLOWERS</h6></a>
+                                 <a href="#"><h6 style="color:#0072bb;font-size:16px;font-weight:600;letter-spacing:0.6px">1,203</h6></a>
+                          </div>  
+                     </div>
+                </div> 
+           </ul>    
+       </li>
+       <li>
+           <div class="col-md-12 text-left third_sec" style="padding:0px 10px 7px 20px;background-color:#fff;list-style-type:none !important;margin-top:            20px;border-radius:5px 5px 5px 5px;border:1px solid #e1e8ed">
+                   <h5 style="color:#66757f;font-size:18px;font-weight:600">Tags & Topics</h5>
+                   <a href="#"><h6 style="color:#0072bb">#Life</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">#Photography</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">#Art</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">#Steem</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">#Life</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Introduce Yourself</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Food</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Travel</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Bitcoin</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">News</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Money</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Story</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Writing</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Nature</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Politics</h6></a>
+                   <a href="#"><h6 style="color:#0072bb">Cryptocurrency</h6></a>
+                   <a href="#"><h6 style="color:#66757f">Show More...</h6></a> 
+           </div>
+      </li>
+  </ul>
+</aside>
+<!--------------------------------------------------------------------------------------first side section------------------------------------------>
+
+
+<!--------------------------------------------------------------------------------------second section------------------------------------------>		
+<section id="content" class="three-column">
+   <article>
+       <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#d7e9f4;border:2px solid #e1e8ed;border-radius:5px 5px 0px 0px"> 
+           <div class="form-group ">
+               <div class="col-md-1 col-sm-2 col-xs-2" style="padding:0px 0px 0px 0px">
+                     <img src="1/images/z1.png" >
+                </div>
+                <div class="col-md-11 col-sm-10 col-xs-10" style="padding-top:7px;padding:6px 0px 3px 7px">
+                     <input type="text" id="email" class="form-control ex" placeholder="What's happening?" data-toggle="modal" data-target="#myModalupload"> 
+                  
+                      
+                </div>
+         </div>
+     </div>   
+     
+     <div class="col-md-12 seven_sec" >
+     </div>
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;"> 
+          <h4 style="color:#292f33;display:inline;text-transform:capitalize;vertical-align:-webkit-baseline-middle;vertical-align:-moz-baseline-middle">          Feed</h4>     
+              <div class="dropdown" style="margin-top:4px">
+                <img src="images/z9.png" style="vertical-align:-webkit-baseline-middle;vertical-align:-moz-baseline-middle" />
+                   <div class="dropdown-content">
+                       <div class="desc"><a href="#">Feed</a></div>
+                       <div class="desc"><a href="#">New</a></div>
+                       <div class="desc"><a href="#">Hot</a></div>
+                       <div class="desc"><a href="#">Trending</a></div>
+                   </div>
+             </div>
+           <a href="#myModal" data-toggle="modal" style="outline:0px"><img src="1/images/createzap.png" class="pull-right" > </a>
+    </div>   
+
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px">  
+          <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+               <a href="user_profile.html"><img src="images/z5.png" /></a>
+          </div>
+          <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  <img src="images/z11.png" /> 
+                  <img src="images/z7.png" class="pull-right img_right" /> <br />
+                  <img src="images/circle.png" width="5" height="5"/>
+                  <span style="color:#92a1ad">2 hours ago</span>
+                  <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                  Loren ipsum has been the industry's standard dummy text.</p>  
+                  <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> <br />
+                  <a href="#myModal21" data-toggle="modal"><img src="images/zappl1.png" class="img-responsive"/></a> <br />
+                  <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                  <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">Comment(3)</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">Repost</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">2hours ago</span>
+          </div>
+     </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                 <img src="images/z3.png" width="40" height="40" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  <img src="images/z11.png" /> 
+                  <img src="images/z7.png" class="pull-right img_right" /> <br />
+                  <img src="images/circle.png" width="5" height="5" />
+                  <span style="color:#92a1ad">2 hours ago</span>
+                  <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                   Loren ipsum has been the industry's standard dummy text.</p>  
+                  <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> <br />
+                  <img src="images/zappl2.png" class="img-responsive" /> <br />
+                  <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                  <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">Comment(3)</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">Repost</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">2hours ago</span>
+           </div>
+     </div>  
+       
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px"> 
+          <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                <img src="images/z3.png" width="40" height="40" />
+          </div>
+          <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  <img src="images/z11.png" /> 
+                  <img src="images/z7.png" class="pull-right img_right" /> <br />
+                  <img src="images/circle.png" width="5" height="5" />
+                  <span style="color:#92a1ad">2 hours ago</span>
+                  <p style="color:#292f33;margin: 0 0 0px;">Loren ipsum is simply dummy text of the printing and typesetting industry. Loren ipsum has                    been the industry's standard dummy text.</p>  
+                  <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> <br />
+                  <img src="images/zappl3.jpg" class="img-responsive" /> <br />
+                  <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                  <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">Comment(3)</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">Repost</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">2hours ago</span>
+         </div>
+      </div>
+       
+    </article>
+</section>
+<!--------------------------------------------------------------------------------------second section------------------------------------------>
+        
+
+<!--------------------------------------------------------------------------------------third side section------------------------------------------><aside class="sidebar small-sidebar right-sidebar">
+	<ul>	
+       <li style="margin-top:-9px">
+            <div class="col-md-12 col-sm-12 col-xs-12 second_sec" style="background-color:#fff;border:1px solid #e1e8ed;border-radius:5px;padding-bottom:            10px ">
+                  <h5 style="color:#66757f;font-size:18px;font-weight:600">Who to follow</h5>
+                      <div class="col-md-12" style="padding:0px">  
+                           <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                                    <img src="images/z3.png" width="40" height="40" />
+                           </div>
+                           <div class="col-md-10 col-sm-10 col-xs-10 side_pad" >
+                                   <h5 style="display:inline;color:#333333;font-weight:600">Zappl</h5> <span class="spa_text">@new_zappl</span>
+                                   <img src="images/z6.png" class="pull-right" />
+                                   <a href="#"><img src="1/images/followus.png"></a>
+                           </div>
+                     </div> 
+                     <div class="col-md-12" style="padding:0px">  
+                          <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                                  <img src="images/z3.png" width="40" height="40" />
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 side_pad" >
+                                  <h5 style="display:inline;color:#333333;font-weight:600">Zappl</h5> <span class="spa_text">@new_zappl</span>
+                                  <img src="images/z6.png" class="pull-right" />
+                                  <a href="#"><img src="1/images/followus.png"></a>
+                         </div>
+                    </div> 
+                   <div class="col-md-12" style="padding:0px">  
+                        <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                              <img src="images/z3.png" width="40" height="40" />
+                        </div>
+                        <div class="col-md-10 col-sm-10 col-xs-10 side_pad" >
+                              <h5 style="display:inline;color:#333333;font-weight:600">Zappl</h5> <span class="spa_text">@new_zappl</span>
+                              <img src="images/z6.png" class="pull-right" />
+                             <a href="#"><img src="1/images/followus.png"></a>
+                       </div>
+                  </div> 
+                 <a href="#"><span style="color:#0072bb;padding-left:4px">View All</span></a>
+           </div> 
+   </li>
+   <li>
+        <div class="col-md-12 text-left first_sec" style="padding:10px 10px 10px 20px;background-color:#fff;list-style-type:none !important;border-radius:           5px 5px 5px 5px;border:1px solid #e1e8ed;margin-top:20px">
+          <a href="#"> <p style="color:#ccd6dd;font-size:12px">@ 2017 zappl About Help Center Terms<br />
+           Privacy Polocy Cookies Ads Info Brand <br />
+           Blog Status AppsJobs Business Developers</p></a>  
+        </div>
+  </li>
+ </ul>
+</aside>
+<!--------------------------------------------------------------------------------------third side section------------------------------------------>
+<div class="clear"></div>
+    </div>
+
+    
+    
+ <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+         <div class="modal-header" style="border-bottom:0px">
+             <button type="button" class="close" data-dismiss="modal" style="color:#000 !important;outline:0px">&times;</button>
+         </div>
+         <div class="modal-body" style="padding:0px 25px">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="9" placeholder="Write your zap..." style="resize:none;border-radius:3px 3px 3px 3px"></textarea>
+            </div>
+           
+           <span class="select-wrapper">
+                        <input type="file" name="image_src" id="image_src2" />
+           </span> &nbsp;&nbsp;&nbsp;
+           
+           <span class="select-wrapper2">
+                        <input type="file" name="image_src2" id="image_src2" />
+           </span> &nbsp;&nbsp;&nbsp;
+           
+           
+           
+           
+           
+          <div id="uploadImages" class="col-md-1 col-xs-3" style="padding-left:0px;display:block;">
+				<span class="select-wrapper">
+					   <input type="file" name="image_src" style="width: 26px;height: 26px;opacity: 0;filter:alpha(opacity=0);" onchange="angular.element(this).scope().fileWhatsHappening(this)">
+			    </span>
+		   </div>
+                            
+                            
+           <div id="uploadVideos" class="col-md-2 col-xs-3" style="padding-top:11px;margin-left:2px;margin-top: 12px;display: block;padding: 0px;">
+ 		        <a data-target="#myModalupload" data-toggle="modal"><img src="images/youtube.png"></a>
+ 		   </div>                 
+           
+           
+           
+       
+           
+           <div class="col-md-12" style="padding:20px 0px 0px 0px"> 
+                <div class="col-md-7" style="padding:0px">
+                   <div class="col-md-3" style="padding:4px 0px 0px 0px">
+                       <span style="color:#8899a6;line-height:30px">Rewards :</span>
+                   </div>
+                   <div class="col-md-9" style="padding:0px 7px;margin-left:-12px">
+                       <div class="select">
+                  <select name="select" style="color:#8899a6">
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                  </select>
+           </div>
+                      
+                  </div>
+               </div>
+               <div class="col-md-5" style="padding:4px 0px 0px 0px">
+                  <span style="color:#8899a6;;line-height:30px">Upvote post</span>&nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" style="border-radius:0px !important">
+                <button type="button" class="btn btn-primary hover_eff" >Save as draft</button> 
+              </div>
+            </div>
+            
+            <div class="col-md-12" style="padding:0px">
+               <a href="draft.html"><h6>Show Save Drafts</h6></a> 
+               
+            </div>
+          
+        </div>
+        <div class="modal-footer text-center" style="border-top:0px;text-align:center !important">
+          <div class="col-md-12" style="margin-top:20px">
+            <button type="button" class="btn button_layout" data-dismiss="modal" style="color:#333333;font-weight:600;">Post</button>
+          </div>
+      </div>
+      
+  </div>
+</div>
+</div>
+<!-- Modal -->
+   
+          
+ 
+ <!-- Modal -->
+<div class="modal fade" id="myModalupload" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+         <div class="modal-header" style="border-bottom:0px">
+             <button type="button" class="close" data-dismiss="modal" style="color:#000 !important;outline:0px">&times;</button>
+         </div>
+         <div class="modal-body" style="padding:0px 25px">
+            <div id="edit_sec" class="col-md-12" style="padding:0px">
+	          <textarea id="editor2">
+	          </textarea>
+            </div>
+         </div>
+         <div class="modal-footer text-center" style="border-top:0px;text-align:center !important">
+          <button type="button" class="btn button_layout" data-dismiss="modal"><span style="color:3292f33;font-weight:600">Post</span></button>
+        </div>
+      </div>
+      
+  </div>
+</div>
+<!-- Modal --> 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+<!-- Modal -->
+<div class="modal fade" id="myModal21" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0px">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" style="text-transform:capitalize;padding-left:26px">Zappl: Advertisement</h4>
+        </div>
+        <div class="modal-body" style="padding:0px 30px">
+              <div class="col-md-12 col-sm-12 col-xs-12" >  
+                    <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                        <img src="images/z5.png" />
+                   </div>
+                   <div class="col-md-11 col-sm-11 col-xs-11" style="padding:2px 12px 3px 10px">
+                        <h4 style="margin-bottom:-11px;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   </div>  <br>
+                   <p style="color:#292f33;margin: 0 0 0px;line-height:19px"><span class="text_blue">Loren ipsum</span> is simply dummy text of the                    printing and typesetting industry. Loren ipsum has been the industry's standard dummy text.</p>  
+                   <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> <br />
+                   <a href="#"><img src="images/zappl1.png" class="img-responsive"/></a> <br />
+                   <h4 style="text-transform:capitalize;margin-bottom:0px">Shouty Ads</h4>
+                   <p style="color:#66757f;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                    Loren ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallay of type and                    scrambled  it to make a type specimen book. It has survived not only five centuries.</p> 
+                   <h4 style="text-transform:capitalize;margin-bottom:0px">Celebrity Endorsements</h4>
+                   <p style="color:#66757f;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                    Loren ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallay of type and                    scrambled  it to make a type specimen book. It has survived not only five centuries.</p> <br>
+                   <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                   <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                   <span style="color:#717f88">.</span>&nbsp;
+                   <span style="color:#717f88;font-size:13px">Comment(3)</span>&nbsp;
+                   <span style="color:#717f88">.</span>&nbsp;
+                   <span style="color:#717f88;font-size:13px">Repost</span>&nbsp;
+                   <span style="color:#717f88">.</span>&nbsp;
+                   <span style="color:#717f88;font-size:13px">2hours ago</span>
+                   <div class="col-md-12" style="border-bottom:1px solid #e1e8ed;padding-top:20px">
+              </div>
+              
+              <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border-bottom:1px solid #e1e8ed;padding:5px 0px 10px 0px">  
+                  <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                        <img src="images/z5.png" />
+                 </div>
+                 <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                       <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                       <img src="images/z11.png" /> 
+                       <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting                         industry. Loren ipsum has been the industry's standard dummy text.</p>  
+
+                       <span style="color:#0072bb;"># ever since the 1500S</span>  <br />
+                       <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                       <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                       <span style="color:#717f88">.</span>&nbsp;
+                       <span style="color:#717f88;font-size:13px">2hours ago</span>&nbsp;
+                       <a href="#textfield3"><img id="img_reply3" src="images/reply_icon1.png"></a>
+                       <div id="textfield3" class="form-group" style="display:none;margin-top:5px">
+                  <textarea class="form-control" rows="3" id="comment" placeholder="Reply" style="resize:none;border-radius:3px 3px 0px 0px" >
+                  </textarea> 
+                  <button type="button" class="btn button_layout"  style="color:3292f33;font-weight:600;margin-top:4px">Post</button>
+                  <a href="#"><span class="spa_cancel">Cancel</span></a>
+                 </div>
+                </div>
+             </div> 
+             <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border-bottom:1px solid #e1e8ed;padding:5px 0px 10px 0px">  
+                  <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                        <img src="images/z3.png" />
+                  </div>
+                  <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                       <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                       <img src="images/z11.png" /> 
+                       <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting                        industry. Loren ipsum has been the industry's standard dummy text.</p>  
+                       <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> 
+                       <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                       <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                       <span style="color:#717f88">.</span>&nbsp;
+                       <span style="color:#717f88;font-size:13px">2hours ago</span>&nbsp;
+                       <a href="#textfield2"><img id="img_reply2" src="images/reply_icon1.png"></a>
+                       <div id="textfield2" class="form-group" style="display:none;margin-top:5px">
+                  <textarea class="form-control" rows="3" id="comment" placeholder="Reply" style="resize:none;border-radius:3px 3px 0px 0px" >
+                  </textarea> 
+                   <button type="button" class="btn button_layout"  style="color:3292f33;font-weight:600;margin-top:4px">Post</button>
+                   <a href="#"><span class="spa_cancel">Cancel</span></a>
+                 </div>
+
+                 </div>
+           </div> 
+          <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border-bottom:1px solid #e1e8ed;padding:5px 0px 10px 0px">  
+                <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                        <img src="images/z5.png" />
+               </div>
+               <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                   <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   <img src="images/z11.png" /> 
+                   <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                    Loren ipsum has been the industry's standard dummy text.</p>  
+                  <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> 
+                  <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                  <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">2hours ago</span>&nbsp;
+                  <a href="#textfield1"> <img id="img_reply1" src="images/reply_icon1.png"> </a> 
+                  <div id="textfield1" class="form-group" style="display:none;margin-top:5px">
+                  <textarea class="form-control" rows="3" id="comment" placeholder="Reply" style="resize:none;border-radius:3px 3px 0px 0px" >
+                  </textarea> 
+                  <button type="button" class="btn button_layout"  style="color:3292f33;font-weight:600;margin-top:4px">Post</button>
+                  <a href="#"><span class="spa_cancel">Cancel</span></a>
+                 </div>
+                  
+                  
+              </div>
+         </div> 
+    </div>  
+</div>
+        <div class="modal-footer" style="border-top:0px">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
+ 

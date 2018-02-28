@@ -1,0 +1,981 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]--><head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D Kitchen</title>
+<link rel="icon" href="images/favicon2.png" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/font-icon.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+ <script>
+
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".sp-pre-con").fadeOut("slow");;
+	});
+</script>
+<style>
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 1.1em;    
+    font-weight:300;
+    margin: 0;
+    padding: 0;
+	color:#fff;
+	margin-bottom:40px;
+	letter-spacing: 4.5px;
+       
+}
+
+.hero h3 {
+    font-size: 3em;    
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+	color:#fff;
+	margin-bottom:20px;
+	text-transform:inherit;
+    line-height: 66px;
+    
+}
+
+.fade-carousel .slides .slide-2 p {
+	font-size: 12px;    
+    font-weight: 500;
+    color:#000;
+	position:absolute;
+    bottom:0;
+    right:5px;
+}
+
+.fade-carousel .slides .slide-3 p {
+	font-size: 12px;    
+    font-weight: 500;
+    color:#000;
+	position:absolute;
+    bottom:0;
+    right:5px;
+}
+
+
+.fade-carousel .slides .slide-4 p {
+	font-size: 12px;    
+    font-weight: 500;
+    color:#000;
+	position:absolute;
+    bottom:0;
+    right:5px;
+}
+
+.fade-carousel .slides .slide-5 p {
+	font-size: 12px;    
+    font-weight: 500;
+    color:#fff;
+	position:absolute;
+    bottom:0;
+    right:5px;
+}
+
+
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 1s all ease-in-out .1s;
+       -moz-transition: 1s all ease-in-out .1s; 
+        -ms-transition: 1s all ease-in-out .1s; 
+         -o-transition: 1s all ease-in-out .1s; 
+            transition: 1s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 1s all ease-in-out .1s;
+       -moz-transition: 1s all ease-in-out .1s; 
+        -ms-transition: 1s all ease-in-out .1s; 
+         -o-transition: 1s all ease-in-out .1s; 
+            transition: 1s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+   background-color:#fff;
+   color:#000;
+}
+.btn.btn-lg {
+    background-color:inherit;
+	color:#fff;
+	padding:15px 40px;
+	border:1px solid #fff;
+	border-radius:0px;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position:relative;
+}
+.fade-carousel .slides .slide-1 {
+  background-image:url(images/ban.png); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image:url(images/ban1.png);
+}
+.fade-carousel .slides .slide-3 {
+  background-image:url(images/ban2.png);
+}
+.fade-carousel .slides .slide-4 {
+  background-image:url(images/ban3.png);
+}
+.fade-carousel .slides .slide-5 {
+  background-image:url(images/ban5.png);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+
+
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #fff;
+    box-shadow:2px 2px 2px #ccc;
+	min-height:95px;
+	padding:13px 0px;
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+.navbar-toggle {
+border:1px solid #e03a3a !important;
+}
+.navbar-fixed-top .navbar-collapse {
+	max-height:100vh;
+}
+
+.hgp {
+	//border:1px solid #fff;
+	padding:2em;
+	background-color:rgba(0,0,0,0.13)
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="sp-pre-con"></div>
+
+ <nav id="header" class="navbar navbar-fixed-top">
+            <div id="header-container" class="container navbar-container">
+               <div class="col-md-8 col-sm-6 col-xs-6" style="padding-left:0px"> 
+                <a id="brand" class="navbar-brand" href="#"><img src="images/new logo.png" width="200" height="200" style="margin-top:-86px"></a>
+               
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6" style="padding:0px">
+                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                   
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#intro">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!--<div class="prague-social-nav" style="display:inline">
+                            <a href="#social" style="padding-top:8px;margin-top:6px"><i class="fa fa-chain-broken i1" id="chain"  aria-hidden="true"></i> </a>
+                            <ul id="social" class="social-content" style="display:none" >
+                              <li><a target="_blank" href="#"> <i aria-hidden="true" class="fa fa-behance"></i> </a></li> <br>
+                              <li><a target="_blank" href="#"> <i aria-hidden="true" class="fa fa-twitter"></i> </a></li> <br>
+                              <li><a target="_blank" href="#"> <i aria-hidden="true" class="fa fa-facebook"></i> </a></li> <br>
+                              <li> <a target="_blank" href="#"> <i aria-hidden="true" class="fa fa-pinterest-p"></i> </a></li> <br>
+                           </ul>
+                        </div>-->    
+                     </ul>
+                </div>
+              </div>
+           </div>
+        </nav>
+  
+ 
+ 
+ 
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+    <li data-target="#bs-carousel" data-slide-to="3"></li>
+    <li data-target="#bs-carousel" data-slide-to="4"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup class="hgp">
+            <h1>VISUALISE YOUR KITCHEN SPACE</h1>   
+            <h3>Neat, Clean and Tidy - Designed to your satisfaction </h3>
+        </hgroup>
+        <!--<button class="btn btn-hero btn-lg" role="button">View Project</button>-->
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"><a href="http://www.commercialkitchensoftware.com/" style="color:#fff" target="_blank"><p>www.commercialkitchensoftware.com</p></a></div>
+      <div class="hero">        
+        <hgroup class="hgp">
+            <h1>VERIFY LAYOUT FEASIBILTY</h1> 
+            <h3>Designed Neat and Snug - To fit your space and tickle customers' taste</h3>
+        </hgroup>       
+        <!--<button class="btn btn-hero btn-lg" role="button">View Projects</button>-->
+      </div>
+    </div>
+     <div class="item slides">
+      <div class="slide-3"><a href="http://www.commercialkitchensoftware.com/" style="color:#fff" target="_blank"><p>www.commercialkitchensoftware.com</p></a></div>
+      <div class="hero">        
+        <hgroup class="hgp">
+            <h1>VERSATILITY BUILT-IN</h1>      
+            <h3>Explore your kitchen world - Be the master of what you dish out</h3>
+        </hgroup>       
+        <!--<button class="btn btn-hero btn-lg" role="button">View Projects</button>-->
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-4"><a href="http://www.commercialkitchensoftware.com/" style="color:#fff" target="_blank"><p>www.commercialkitchensoftware.com</p></a></div>
+      <div class="hero">        
+        <hgroup class="hgp">
+            <h1>VALIDATE THE FINAL OUTCOME FROM ALL ANGLES</h1>      
+            <h3>Exploit the 3D advantage - Review today and avoid surprises tomorrow</h3>
+        </hgroup>
+        <!--<button class="btn btn-hero btn-lg" role="button">View Project</button>-->
+      </div>
+    </div>
+     <div class="item slides">
+      <div class="slide-5"><a href="http://www.commercialkitchensoftware.com/" style="color:#fff" target="_blank"><p>www.commercialkitchensoftware.com</p></a></div>
+      <div class="hero">        
+        <hgroup class="hgp">
+            <h1>WYSIWYG KITCHENS</h1>      
+            <h3> What You See Is What You Get - Literally</h3>
+        </hgroup>
+        <!--<button class="btn btn-hero btn-lg" role="button">View Project</button>-->
+      </div>
+    </div>
+    
+  </div> 
+</div>
+  
+   
+<!-- header section --> 
+
+<!-- intro section -->
+<section id="intro" class="section intro">
+  <div class="container">
+    <div class="col-md-6 text-center wow slideInLeft">
+      <img src="images/mid_pic.png" class="img-responsive wow slideInLeft">
+      <!--<div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-1 vc_col-xs-12  margin-lg-65t 
+         margin-sm-0t wow slideInLeft">
+         <div class="vc_column-inner ">
+              <div class="wpb_wrapper">
+                 <div class="prague-counter multi_item no-figure">
+                    <div class="figures ">
+                    </div>
+                 <div class="counter-outer s-back-switch" style="padding:10px;background-image:url(images/stock-photo-164383998.jpg);height:390px">
+                
+                 <div class="numbers"> 
+				 <svg> 
+				   <defs> 
+				     <mask id="coming_mask_0" x="0" y="0"> 
+					 <rect class="coming-alpha" x="0" y="0" width="100%" height="100%"></rect> 
+					 <text class="count number " x="52%" y="47%" text-anchor="middle" alignment-baseline="middle">157</text>
+					 <text class="count title" x="54%" y="80%" text-anchor="middle" alignment-baseline="middle">Visualization</text>
+					  </mask> 
+				  </defs> 
+				  <rect style="-webkit-mask: url(#coming_mask_0); mask: url(#coming_mask_0);" class="base" x="0" y="0" width="100%" height="100%"></rect>                    </svg> <svg> <defs> 
+				  <mask id="coming_mask_1" x="0" y="0"> <rect class="coming-alpha" x="0" y="0" width="100%" height="100%"></rect> <text class="count number" x="46%" y="47%" text-anchor="middle" alignment-baseline="middle">86</text>
+				  <text class="count title" x="46%" y="80%" text-anchor="middle" alignment-baseline="middle">Communication</text> </mask> </defs> <rect style="-webkit-mask: url(#coming_mask_1); mask: url(#coming_mask_1);" class="base" x="0" y="0" width="100%" height="100%">
+				  </rect> 
+                  </svg> 
+				  <svg>
+				  <defs>
+				  <mask id="coming_mask_2" x="0" y="0"> <rect class="coming-alpha" x="0" y="0" width="100%" height="100%"></rect>
+				  <text class="count number" x="52%" y="35%" text-anchor="middle" alignment-baseline="middle">924</text> <text class="count title" x="54%" y="68%" text-anchor="middle" alignment-baseline="middle">WORKING HOURS</text> </mask> </defs> 
+				  <rect style="-webkit-mask: url(#coming_mask_2); mask: url(#coming_mask_2);" class="base" x="0" y="0" width="100%" height="100%"></rect>                   </svg> 
+				  <svg> 
+				  <defs>
+				  <mask id="coming_mask_3" x="0" y="0"> 
+				  <rect class="coming-alpha" x="0" y="0" width="100%" height="100%">
+				  </rect> 
+				  <text class="count number" x="46%" y="35%" text-anchor="middle" alignment-baseline="middle">13</text>
+				  <text class="count title" x="46%" y="68%" text-anchor="middle" alignment-baseline="middle">Validate & Verify</text>
+				   </mask> 
+				   </defs> 
+				   <rect style="-webkit-mask:url(#coming_mask_3); mask: url(#coming_mask_3);" class="base" x="0" y="0" width="100%" height="100%"></rect>                     </svg>
+                   </div>
+                 </div>
+                 </div>
+                </div>
+              </div>
+           </div>-->
+    </div>
+    <div class="col-md-5 col-md-offset-1 text-left">
+      <!--<p class="subtitle wow slideInRight">Numbers</p>-->
+      <h3 class="title wow slideInRight">3D Kitchen Design, Advantage</h3>
+      <p class="content  wow slideInRight">3D designs for your café or restaurant kitchen will help you visualize your work area layout. We offer standard or tailor-made layouts for your café/restaurant. You have a choice of alternatives to select from depending upon your commercial kitchen equipment list.
+The entire eventual get-up can be visualized utilizing actual and precise equipment dimensions from our extensive 3D database library. This will enable you to precisely optimize layouts from aesthetic, commercial and ergonomic perspectives without compromising on safety. <br>
+The designs can be vetted in advance by regulators / private certifiers to avoid the excessive hardships that arise from last minute compliance requirements that ruin the decor and the style that you would like to maintain.</p>
+    </div>
+  </div>
+</section>
+<!-- intro section --> 
+
+
+
+<!-- services section -->
+<section id="services" class="services service-section">
+  <span class="overlay"> </span>
+  <div class="container">
+     <div class="col-md-12">
+      <h3 class="title wow fadeInUp">Services</h3> <br>
+      <p class="subtitle wow fadeInUp">3D designs for your Kitchen will help you visualize your working area and hospitality equipment’s. We offer standard or tailor-made layouts for your café or restaurant kitchen. </p>   
+     
+    </div>
+  </div>
+</section>
+<!-- services section --> 
+
+<section id="services1" >
+   <div class="container">
+        <div class="col-md-3 text-center wow slideInLeft">
+          <div class="col-md-12">
+              <h3>Planning</h3>
+              <p>We help you select the right equipment for your needs. The suggestions we offer will be cost effective but will always give you the last say in the selection and investment process so that you get what you desire with<span style="display:none;font-size:inherit" id="1"> the optimum investment. This will help you avoid hidden costs. You can plan and minimize your capital expenses, your operating costs and your maintenance / repair and shut-down costs with our assistance quite easily.</span> </p> 
+              <button type="button" class="btn a_btn2" id="btn1">READ</button>
+        
+          </div>
+        </div>
+        <div class="col-md-3 text-center wow fadeInUp">
+          <div class="col-md-12">
+              <h3>Designing</h3>
+              <p>Our 3D Kitchen Designs will prepare you in advance for tomorrows modifications and future investments based on the records you create today. So, no unnecessary wastage and no future heart-burns if you<span style="display:none;font-size:inherit" id="2"> plan well today. </p>
+              <button type="button" class="btn a_btn2" id="btn2">READ</button>
+        
+          </div>
+        </div>
+        <div class="col-md-3 text-center wow slideInRight">
+          <div class="col-md-12">
+              <h3>Reviewing</h3>
+              <p>The layouts can be reviewed well before construction avoiding impossible fitments and with the advantages that all project stake-holders such as designers, builders, inspectors, third party regulators and your key staff<span style="display:none;font-size:inherit" id="3"> can visualize and plan their activities sequentially and efficiently with minimum interface between each other, minimum re-fitment expenses and with a minimum project schedule.</span> </p>
+              <button type="button" class="btn a_btn2" id="btn3">READ</button>
+        
+          </div>
+        </div>
+         <div class="col-md-3 text-center wow slideInRight">
+          <div class="col-md-12">
+              <h3>Finalizing</h3>
+              <p>As a part of effective project finalisation, you have the options of presenting realistic looking virtual views of the end result to owners, statutory approvers, factoring any suggested changes all well in advance of the final <span style="display:none;font-size:inherit" id="4"> outcome. So with us, you reduce possibilities of costly modifications and delays that otherwise could have occurred towards the end of your project. In effect, with us, you would be reducing the adverse effects of late changes due to expensive after-thoughts from stake-holders.  So, no unnecessary wastage and no future heart-burns, if you plan well today. </p>
+              <button type="button" class="btn a_btn2" id="btn4">READ</button>
+        
+          </div>
+        </div>
+      
+      </div>
+</section>
+<!--------------------------------------------------------------services1-------------------------------------------------------------------->
+
+
+
+<!-- contact section -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ">
+        <p class="subtitle wow slideInLeft">CONTACT</p>
+        <h3 class="title wow slideInLeft">Let's start new project.</h3>
+        <div class="wow slideInLeft">
+          <p class="content">Our team consists of highly skilled tradesmen with extensive experience working in the multiple hospitality related projects. </p></div>
+        
+        <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1484117815051">
+           <div class="wpb_column vc_column_container col-sm-4 pad_left">
+                <div class="vc_column-inner ">
+                     <div class="wpb_wrapper">
+                         <div class="adddress-block">
+                              <div class="address-block-outer"> 
+                                   <span class="separator"></span>
+                                        <h4 class="address-title wow slideInLeft">PHONE</h4>
+                                        <p class="content1 wow slideInLeft"><a href="tel: +61 411414605"> +61 411414605</a></p> 
+                                        <!--<p class="content1 wow slideInLeft"><a href="tel:+44(0)479253730">+44 (0)4 79 25 37 30</a></p>-->
+                               </div>
+                          </div>
+                      </div>
+                 </div>
+            </div>
+           <div class="wpb_column vc_column_container col-sm-4 pad_left">
+                <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                        <div class="adddress-block">
+                          <div class="address-block-outer"> 
+                             <span class="separator"></span>
+                                <h4 class="address-title wow slideInLeft">EMAIL</h4>
+                                <p class="content1 wow slideInLeft" ><a href="mailto:projects@3dkitchendesign.com.au">projects@3dkitchendesign.com.au</a></p>
+                                <!--<p class="content1 wow slideInLeft" ><a href="mailto:prague_arh@gmail.com">prague_arh@gmail.com</a></p>-->
+                           </div>
+                      </div>
+                   </div>
+                </div>
+          </div>
+         <!--<div class="wpb_column vc_column_container col-sm-4 pad_left">
+            <div class="vc_column-inner">
+               <div class="wpb_wrapper">
+                  <div class="adddress-block">
+                    <div class="address-block-outer"> 
+                      <span class="separator"></span>
+                      <h4 class="address-title wow slideInLeft">SKYPE</h4>
+                      <p class="content1 wow slideInLeft">prague_support_1</p>
+                      <p class="content1 wow slideInLeft">prague_support_2</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+         </div>-->
+     </div>
+   </div>
+   
+   
+   <div class="col-md-6 pad_top ">
+        <div class="col-md-6">
+          <div class="col-md-12">
+             <input type="text" class="textfield wow slideInRight" placeholder="Name" > 
+          </div>
+        </div>  
+        
+         <div class="col-md-6">
+          <div class="col-md-12">
+             <input type="tel" class="textfield wow slideInRight" placeholder="Phone" > 
+          </div>
+        </div>  
+        
+        <div class="col-md-12">
+          <div class="col-md-12">
+             <input type="email" class="textfield wow slideInRight" placeholder="example@gmail.com" > 
+          </div>
+        </div>  
+        
+        <div class="col-md-12">
+          <div class="col-md-12">
+             <textarea class="textfield wow slideInRight" rows="6" placeholder="Message" ></textarea>
+          </div>
+        </div>  
+       
+        <div class="col-md-12 text-right padd_right" >
+          <button type="button" class="btn a_btn3 wow slideInRight"> SEND </button><img src="images/arrow.png" width="50" height="30">
+        </div>
+   
+   
+   </div>  
+     
+    </div>
+  </div>
+</section>
+<!-------------------------------------------------------- contact section ------------------------------------------------------------> 
+
+
+
+
+
+<!-- Footer section -->
+<footer class="footer">
+  <div class="footer-top section">
+    <div class="container">
+      <div class="row" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+       
+        
+        <div class="footer-top-content">
+           <div class="prague-footer-main-block col-md-6 text-left" style="padding:0px">
+                  <div class="prague-logo" style="margin-top:-98px;margin-left:-20px">
+                     <img src="images/white_logo.png" width="200" height="200" class="img-responsive wow slideInLeft" >
+                  </div>
+                 <div class="footer-main-content" style="margin-top:-40px">
+                   <p class="wow slideInLeft" style="color:rgba(255, 255, 255, 0.7);">Our operating philosophy espouses the concept of collective collaboration.  From the beginning, we encourage practices that advance and further  the virtues of exchange, crossing ideas, common effort, shared knowledge and enthusiasm.</p>
+                 </div>
+               </div>
+             <!--<div class="prague-footer-info-block col-md-6 text-right" style="padding:0px">
+             <h6 class="footer-info-block-title wow slideInRight headh6" >GET IN TOUCH</h6>
+             <div class="footer-info-block-content" style="margin-top:29px">
+             <p class="wow slideInRight"><a style="color:#fff" href="tel:+7(885)5896985">+61 411414605</a></p>
+             <p class="wow slideInRight"><a style="color:#fff" href="mailto:prague-architects@info.com">info@3dkitchendesign.com.au</a></p>
+             <p class="wow slideInRight" style="color:#fff">22 Turner Street Blacktown, Sydney, NSW,2148</p></div></div>-->
+          </div>
+        </div>
+       <div class="row" >  
+          <div class="footer-bottom-content  wow fadeInUp">
+              <div class="footer-copyright col-md-6"><p>3D Kitchen (C) 2017 ALL RIGHTS RESERVED</p></div>
+             
+             <div class="prague-social-nav1 col-md-6">
+                <ul class="social-content">
+                 <li> <a target="_blank" href=""> <i aria-hidden="true" class="fa fa-behance"></i> </a></li>
+                 <li> <a target="_blank" href=""> <i aria-hidden="true" class="fa fa-twitter"></i> </a></li>
+                 <li> <a target="_blank" href=""> <i aria-hidden="true" class="fa fa-facebook"></i> </a></li>
+                 <li> <a target="_blank" href=""> <i aria-hidden="true" class="fa fa-pinterest-p"></i> </a></li>
+                 </ul>
+            </div>
+         </div>
+     </div>
+        
+ </div>
+</div>
+  <!-- footer top --> 
+  
+</footer>
+<!-- Footer section --> 
+
+<script>
+$(document).ready(function(){
+    $("#chain").click(function(){
+        $("#social").toggle(500);
+    });
+});
+</script>
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+<script>
+new WOW().init();
+</script>
+<!-- //scrolling script -->
+
+
+
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flexslider-min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script> 
+<script type="text/javascript" src="js/jquery.contact.js"></script>
+<script>
+(function() {
+  var Util,
+    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  Util = (function() {
+    function Util() {}
+
+    Util.prototype.extend = function(custom, defaults) {
+      var key, value;
+      for (key in custom) {
+        value = custom[key];
+        if (value != null) {
+          defaults[key] = value;
+        }
+      }
+      return defaults;
+    };
+
+    Util.prototype.isMobile = function(agent) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+    };
+
+    return Util;
+
+  })();
+
+  this.WOW = (function() {
+    WOW.prototype.defaults = {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true
+    };
+
+    function WOW(options) {
+      if (options == null) {
+        options = {};
+      }
+      this.scrollCallback = __bind(this.scrollCallback, this);
+      this.scrollHandler = __bind(this.scrollHandler, this);
+      this.start = __bind(this.start, this);
+      this.scrolled = true;
+      this.config = this.util().extend(options, this.defaults);
+    }
+
+    WOW.prototype.init = function() {
+      var _ref;
+      this.element = window.document.documentElement;
+      if ((_ref = document.readyState) === "interactive" || _ref === "complete") {
+        return this.start();
+      } else {
+        return document.addEventListener('DOMContentLoaded', this.start);
+      }
+    };
+
+    WOW.prototype.start = function() {
+      var box, _i, _len, _ref;
+      this.boxes = this.element.getElementsByClassName(this.config.boxClass);
+      if (this.boxes.length) {
+        if (this.disabled()) {
+          return this.resetStyle();
+        } else {
+          _ref = this.boxes;
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            box = _ref[_i];
+            this.applyStyle(box, true);
+          }
+          window.addEventListener('scroll', this.scrollHandler, false);
+          window.addEventListener('resize', this.scrollHandler, false);
+          return this.interval = setInterval(this.scrollCallback, 50);
+        }
+      }
+    };
+
+    WOW.prototype.stop = function() {
+      window.removeEventListener('scroll', this.scrollHandler, false);
+      window.removeEventListener('resize', this.scrollHandler, false);
+      if (this.interval != null) {
+        return clearInterval(this.interval);
+      }
+    };
+
+    WOW.prototype.show = function(box) {
+      this.applyStyle(box);
+      return box.className = "" + box.className + " " + this.config.animateClass;
+    };
+
+    WOW.prototype.applyStyle = function(box, hidden) {
+      var delay, duration, iteration;
+      duration = box.getAttribute('data-wow-duration');
+      delay = box.getAttribute('data-wow-delay');
+      iteration = box.getAttribute('data-wow-iteration');
+      return box.setAttribute('style', this.customStyle(hidden, duration, delay, iteration));
+    };
+
+    WOW.prototype.resetStyle = function() {
+      var box, _i, _len, _ref, _results;
+      _ref = this.boxes;
+      _results = [];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        box = _ref[_i];
+        _results.push(box.setAttribute('style', 'visibility: visible;'));
+      }
+      return _results;
+    };
+
+    WOW.prototype.customStyle = function(hidden, duration, delay, iteration) {
+      var style;
+      style = hidden ? "visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;" : "visibility: visible;";
+      if (duration) {
+        style += "-webkit-animation-duration: " + duration + "; -moz-animation-duration: " + duration + "; animation-duration: " + duration + ";";
+      }
+      if (delay) {
+        style += "-webkit-animation-delay: " + delay + "; -moz-animation-delay: " + delay + "; animation-delay: " + delay + ";";
+      }
+      if (iteration) {
+        style += "-webkit-animation-iteration-count: " + iteration + "; -moz-animation-iteration-count: " + iteration + "; animation-iteration-count: " + iteration + ";";
+      }
+      return style;
+    };
+
+    WOW.prototype.scrollHandler = function() {
+      return this.scrolled = true;
+    };
+
+    WOW.prototype.scrollCallback = function() {
+      var box;
+      if (this.scrolled) {
+        this.scrolled = false;
+        this.boxes = (function() {
+          var _i, _len, _ref, _results;
+          _ref = this.boxes;
+          _results = [];
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            box = _ref[_i];
+            if (!(box)) {
+              continue;
+            }
+            if (this.isVisible(box)) {
+              this.show(box);
+              continue;
+            }
+            _results.push(box);
+          }
+          return _results;
+        }).call(this);
+        if (!this.boxes.length) {
+          return this.stop();
+        }
+      }
+    };
+
+    WOW.prototype.offsetTop = function(element) {
+      var top;
+      top = element.offsetTop;
+      while (element = element.offsetParent) {
+        top += element.offsetTop;
+      }
+      return top;
+    };
+
+    WOW.prototype.isVisible = function(box) {
+      var bottom, offset, top, viewBottom, viewTop;
+      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+      viewTop = window.pageYOffset;
+      viewBottom = viewTop + this.element.clientHeight - offset;
+      top = this.offsetTop(box);
+      bottom = top + box.clientHeight;
+      return top <= viewBottom && bottom >= viewTop;
+    };
+
+    WOW.prototype.util = function() {
+      return this._util || (this._util = new Util());
+    };
+
+    WOW.prototype.disabled = function() {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    };
+
+    return WOW;
+
+  })();
+
+}).call(this);
+
+
+wow = new WOW(
+  {
+    animateClass: 'animated',
+    offset: 100
+  }
+);
+wow.init();
+
+</script>
+<script>
+$(document).ready(function(){
+
+/**
+ * This object controls the nav bar. Implement the add and remove
+ * action over the elements of the nav bar that we want to change.
+ *
+ * @type {{flagAdd: boolean, elements: string[], add: Function, remove: Function}}
+ */
+var myNavBar = {
+
+    flagAdd: true,
+
+    elements: [],
+
+    init: function (elements) {
+        this.elements = elements;
+    },
+
+    add : function() {
+        if(this.flagAdd) {
+            for(var i=0; i < this.elements.length; i++) {
+                document.getElementById(this.elements[i]).className += " fixed-theme";
+            }
+            this.flagAdd = false;
+        }
+    },
+
+    remove: function() {
+        for(var i=0; i < this.elements.length; i++) {
+            document.getElementById(this.elements[i]).className =
+                    document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
+        }
+        this.flagAdd = true;
+    }
+
+};
+
+/**
+ * Init the object. Pass the object the array of elements
+ * that we want to change when the scroll goes down
+ */
+myNavBar.init(  [
+    "header",
+    "header-container",
+    "brand"
+]);
+
+/**
+ * Function that manage the direction
+ * of the scroll
+ */
+function offSetManager(){
+
+    var yOffset = 0;
+    var currYOffSet = window.pageYOffset;
+
+    if(yOffset < currYOffSet) {
+        myNavBar.add();
+    }
+    else if(currYOffSet == yOffset){
+        myNavBar.remove();
+    }
+
+}
+
+/**
+ * bind to the document scroll detection
+ */
+window.onscroll = function(e) {
+    offSetManager();
+}
+
+/**
+ * We have to do a first detectation of offset because the page
+ * could be load with scroll down set.
+ */
+offSetManager();
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#1").toggle(500);
+    });
+});
+
+$(document).ready(function(){
+    $("#btn2").click(function(){
+        $("#2").toggle(500);
+    });
+});
+
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#3").toggle(500);
+    });
+});
+
+$(document).ready(function(){
+    $("#btn4").click(function(){
+        $("#4").toggle(500);
+    });
+});
+
+</script>
+</body>
+</html>

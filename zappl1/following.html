@@ -1,0 +1,526 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>profile-Following</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--
+monopoly, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+Download: http://zypopwebtemplates.com/
+
+License: Creative Commons Attribution
+//-->
+
+</head>
+<body>
+<div id="container">
+<!------navbar------------->
+<nav class="navbar " style="border-radius:0px;overflow-y:hidden;box-shadow:none">
+  <div class="container">
+    <div class="navbar-header pad_left" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:15px">
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>                        
+      </button>
+      <a class="navbar-brand " href="#"><img src="images/8.png"  class="pull-left img_mar" /></a>
+      <form class="navbar-form navbar-left navbrand" style="margin-top:10px">
+           <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search Post..." style="-webkit-box-shadow:none !important">
+                  <div class="input-group-btn" >
+                      <button class="btn btn-default" type="submit" style="height:34px;border-left:0px">
+                         <i class="fa fa-search" style="color:#717f88"></i>
+                      </button>
+                 </div>
+          </div>
+       </form>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right col-md-6 col-sm-6 col-xs-6 text-center pad_right set_nav" >
+      
+        <li class="set_nav1 set_nav2"><img src="images/1.png" /><a href="home.html" style="color:#fff;">Home</a></li>
+        <li class="set_nav1 set_nav3"><img src="images/2.png" /><a href="comments.html" style="color:#fff;">Comments</a></li>
+        <li class="set_nav1"><img src="images/3.png" /><a href="wallet.html" style="color:#fff;">Wallet</a></li>
+        <li class="set_nav1"><img src="images/4.png" /><a href="messages.html" style="color:#fff;">Messages</a></li>
+        <li class="set_nav1 fifth_li"><img src="1/images/line1.png" style="margin-top:10px"></li>
+        <a href="profile.html"><li class="active set_nav1"><img src="images/z5.png" style="margin-top:6px;"/></li></a>
+        
+        <a href="setting_public_profile.html"><li class="set_nav1"><img src="images/6.png" style="margin-top:10px" /></li></a>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!------navbar------------->
+<div class="container-fluid blue_background_remove" style="background-image:url(1/images/profile_blue.png);padding:90px 0px;background-size:cover;background-repeat:no-repeat;margin-top:-20px">
+</div>
+
+<div class="container-fluid" style="background-color:#fff;padding:0px 15px;border:1px solid #e1e8ed;margin-top:2px ">
+           <div class="col-md-3">
+           </div>
+            <div class="col-md-6 white_background text-center" style="padding-left:31px !important">
+                <div class="col-md-2 col-xs-4" > 
+                   <a href="#"><h6 class="head_text">POST</h6></a>
+                   <a href="#"><h6 style="color:#0072bb;font-size:12px;font-weight:600;">100</h6></a>   
+                </div>
+                <div class="col-md-2 col-xs-4" style="padding:0px"> 
+                    <a href="following.html"><h6 class="head_text" style="color:#21a3f2">FOLLOWING</h6></a>
+                    <a href="following.html"><h6 style="color:#21a3f2;font-size:11px;font-weight:600;">200</h6></a> 
+                </div>
+                <div class="col-md-2 col-xs-4" style="padding:0px"> 
+                   <a href="followed.html"><h6 class="head_text">FOLLOWERS</h6></a>
+                   <a href="followed.html"><h6 style="color:#0072bb;font-size:12px;font-weight:600;">500</h6></a>  
+                </div>
+                
+           </div>
+            <div class="col-md-3 col-xs-12 text-center pad_bottom_mb" style="padding-right:40px">
+                <a href="#"> <img src="1/images/followus.png" style="margin-top:10px"></a>
+                 <a href="#"><img src="1/images/user_profile.png" style="margin-top:7px;"></a>
+           </div>
+</div>
+
+<div id="body" class="width">
+<!--------first side section------------->
+<aside class="sidebar small-sidebar left-sidebar" style="margin-top:0px">
+       <ul>	
+          <li>
+              <ul>
+                  <div class="col-md-12" style="padding:0px">
+                    <li class="text-center" style="text-align:-webkit-center;text-align:-moz-center;list-style-type:none !important;margin-top:-10px;">
+                    <a href="user_profile.html"><img src="1/images/profile_user.png"  class="img-responsive profile_image" style="z-index:1;margin-top:                       -161px;"/></a>
+                       <a href="#"> <h3 style="color:#292f33;margin-bottom:0px;font-weight:bold">Zappl</h3></a>
+                       <a href="#"><h3 style="color:#8899a6;margin-top:2px">@zappl_zappl</h3></a>
+                       <p style="color:#292f33;margin: 0 0 0px;line-height:19px;text-align:left;padding-left:15px">Loren ipsum is simply dummy text of the                        printing and typesetting industry. Loren ipsum has been the industry's standard dummy text.</p>  
+                   </li>
+                   <li style="padding-left:15px">
+                      <i class="fa fa-map-marker" style="color:#8899a6;text-align:left !important;"> </i> <span>London,UK </span><br>
+                      <i class="fa fa-calendar" style="color:#8899a6;text-align:left !important;margin-top:9px"> </i> <span>Joined May 2017 </span>
+                  </li>
+                </div> 
+            </ul>    
+       </li>
+       <li>
+            <div class="col-md-12 text-left third_sec" style="padding:0px 10px 7px 20px;background-color:#fff;list-style-type:none !important;margin-top:20px;border-radius:5px 5px 5px 5px;border:1px solid #e1e8ed">
+               <h5 style="color:#66757f;font-size:18px;font-weight:600">Tags & Topics</h5>
+               <a href="#"><h6 style="color:#0072bb">#Life</h6></a>
+               <a href="#"><h6 style="color:#0072bb">#Photography</h6></a>
+               <a href="#"><h6 style="color:#0072bb">#Art</h6></a>
+               <a href="#"><h6 style="color:#0072bb">#Steem</h6></a>
+               <a href="#"><h6 style="color:#0072bb">#Life</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Introduce Yourself</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Food</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Travel</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Bitcoin</h6></a>
+               <a href="#"><h6 style="color:#0072bb">News</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Money</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Story</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Writing</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Nature</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Politics</h6></a>
+               <a href="#"><h6 style="color:#0072bb">Cryptocurrency</h6></a>
+               <a href="#"><h6 style="color:#66757f">Show More...</h6></a> 
+           </div>
+      </li>
+   </ul>
+</aside>
+<!-------------------------------------------------------------first side section----------------------------------------------------------------->
+
+
+
+
+<!----------------------------------------------------------------second section------------------------------------------------------------------>		
+<section id="content" class="three-column">
+   <article>
+       <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-radius:5px 5px 0px 0px;padding:7px 15px"> 
+          <div class="col-md-4 col-sm-4 col-xs-4 text-left" style="padding-left:0px;padding-top:7px">
+            <a href=""> <h5 class="text_com" style="display:inline;color:#21a3f2 !important"> < Previous</h5></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 text-center" style="padding-top:10px">    
+              <h4 class="text_com" style="display:inline;color:#313131 !important">Followers</h4>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 text-right" style="padding-right:0px;padding-top:7px">    
+             <a href=""> <h5 class="text_com" style="display:inline;color:#337ab7 !important">Next ></h5></a>
+          </div>
+       </div> 
+       
+         
+      
+       <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                   <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+    
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                  <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                   <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                   <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                   <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                  <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                   <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+    <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;padding-bottom: 8px;">  
+            <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   
+           </div>
+      </div>  
+     
+     <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-top:0px;border-radius:0px 0px 5px 5px;      padding-bottom: 8px;background-color:#f1f1f1">  
+           <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                  <img src="images/z5.png" />
+           </div>
+           <div class="col-md-11 col-sm-11 col-xs-11" style="padding:19px 12px 3px 10px">
+                  <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                  
+          </div>
+    </div>  
+       
+    
+       
+    </article>
+</section>
+<!--------------------------------------------------------------------first side section-------------------------------------------------------------->
+        
+ 
+<!--------------------------------------------------------------------third side section--------------------------------------------------------------><aside class="sidebar small-sidebar right-sidebar">
+	<ul>	
+       <li style="margin-top:-9px">
+            <div class="col-md-12 col-sm-12 col-xs-12 second_sec" style="background-color:#fff;border:1px solid #e1e8ed;border-radius:5px;padding-bottom:            10px ">
+                 <h5 style="color:#66757f;font-size:18px;font-weight:600">Who to follow</h5>
+                      <div class="col-md-12" style="padding:0px">  
+                           <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                                   <img src="images/z3.png" width="40" height="40" />
+                           </div>
+                           <div class="col-md-10 col-sm-10 col-xs-10 side_pad" >
+                                   <h5 style="display:inline;color:#333333;font-weight:600">Zappl</h5> <span class="spa_text">@new_zappl</span>
+                                   <img src="images/z6.png" class="pull-right" />
+                                   <a href="#"><img src="1/images/followus.png"></a>
+                           </div>
+                      </div> 
+                      <div class="col-md-12" style="padding:0px">  
+                           <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                                   <img src="images/z3.png" width="40" height="40" />
+                           </div>
+                           <div class="col-md-10 col-sm-10 col-xs-10 side_pad" >
+                                  <h5 style="display:inline;color:#333333;font-weight:600">Zappl</h5> <span class="spa_text">@new_zappl</span>
+                                  <img src="images/z6.png" class="pull-right" />
+                                  <a href="#"><img src="1/images/followus.png"></a>
+                           </div>
+                     </div> 
+                     <div class="col-md-12" style="padding:0px">  
+                          <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                                  <img src="images/z3.png" width="40" height="40" />
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 side_pad" >
+                                 <h5 style="display:inline;color:#333333;font-weight:600">Zappl</h5> <span class="spa_text">@new_zappl</span>
+                                 <img src="images/z6.png" class="pull-right" />
+                                 <a href="#"><img src="1/images/followus.png"></a>
+                          </div>
+                   </div> 
+                  <a href="#"><span style="color:#0072bb;padding-left:4px">View All</span></a>
+          </div> 
+    </li>
+   <li>
+        <div class="col-md-12 text-left first_sec" style="padding:10px 10px 10px 20px;background-color:#fff;list-style-type:none !important;border-radius:        5px 5px 5px 5px;border:1px solid #e1e8ed;margin-top:20px">
+                      <a href="#"><p style="color:#ccd6dd;font-size:12px">@ 2017 zappl About Help Center Terms<br />
+                      Privacy Polocy Cookies Ads Info Brand <br />
+                      Blog Status AppsJobs Business Developers</p> </a>  
+        </div>
+   </li>
+	
+  </ul>
+</aside>
+<!--------------------------------------------------------------------third side section-------------------------------------------------------------->      
+<div class="clear"></div>
+</div>
+    
+    
+    
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0px">
+          <button type="button" class="close" data-dismiss="modal" style="color:#000 !important;outline:0px">&times;</button>
+         
+        </div>
+        <div class="modal-body" style="padding:0px 25px">
+            <div class="form-group">
+              <textarea class="form-control" rows="9" id="comment" placeholder="Write your zap..." style="resize:none;border-radius:3px 3px 0px 0px" ></textarea>
+           </div>
+           <div class="text-center modal_divsection" >
+           <p style="color:#58656e;font-size:13px">Insert Images by dragging & dropping,pasting from the clipboard,or by <span style="color:#21a3f2">selecting them</span>.</p>
+           </div>
+           
+                
+            <div class="col-md-12" style="padding:20px 0px 0px 0px"> 
+                <div class="col-md-8" style="padding:0px">
+                  <div class="col-md-2" style="padding:0px">
+                       <span style="color:#8899a6;line-height:30px">Rewards:</span>&nbsp;&nbsp;&nbsp;
+                  </div>
+                  <div class="col-md-10">
+                      <div class="form-group" style="display: inline-flex; width:100%">
+                           <select class="form-control" id="sel1" style="color:#8899a6">
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                                 <option style="color:#8899a6">Default (50% / 50%)</option>
+                           </select>
+                     </div> 
+                 </div>
+             </div>
+             <div class="col-md-4" style="padding:0px">
+                  <span style="color:#8899a6;;line-height:30px">Upvote post</span>&nbsp;&nbsp;&nbsp;
+                 <input type="checkbox" style="border-radius:0px !important">
+             </div>
+           </div>
+        </div>
+        <div class="modal-footer text-center" style="border-top:0px;text-align:center !important">
+          <button type="button" class="btn button_layout" data-dismiss="modal"><span style="color:3292f33;font-weight:600">Post</span></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal -->
+  
+  
+  
+<!-- Modal -->
+<div class="modal fade" id="myModal21" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="modal-header" style="border-bottom:0px">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title" style="text-transform:capitalize;padding-left:26px">Zappl: Advertisement</h4>
+          </div>
+          <div class="modal-body" style="padding:0px 30px">
+              <div class="col-md-12 col-sm-12 col-xs-12" >  
+                    <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                       <img src="images/z5.png" />
+                   </div>
+                   <div class="col-md-11 col-sm-11 col-xs-11" style="padding:2px 12px 3px 10px">
+                     <h4 style="margin-bottom:-11px;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   </div>  <br>
+                   <p style="color:#292f33;margin: 0 0 0px;line-height:19px"><span class="text_blue">Loren ipsum</span> is simply dummy text of the                    printing and typesetting industry. Loren ipsum has been the industry's standard dummy text.</p>  
+                   <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> <br />
+                   <a href="#"><img src="images/zappl1.png" class="img-responsive"/></a> <br />
+                   <h4 style="text-transform:capitalize;margin-bottom:0px">Shouty Ads</h4>
+                   <p style="color:#66757f;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                    Loren ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallay of type and                    scrambled  it to make a type specimen book. It has survived not only five centuries.</p> 
+                   <h4 style="text-transform:capitalize;margin-bottom:0px">Celebrity Endorsements</h4>
+                   <p style="color:#66757f;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                    Loren ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallay of type and                    scrambled  it to make a type specimen book. It has survived not only five centuries.</p> <br>
+                   <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                   <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                   <span style="color:#717f88">.</span>&nbsp;
+                   <span style="color:#717f88;font-size:13px">Comment(3)</span>&nbsp;
+                   <span style="color:#717f88">.</span>&nbsp;
+                   <span style="color:#717f88;font-size:13px">Repost</span>&nbsp;
+                   <span style="color:#717f88">.</span>&nbsp;
+                   <span style="color:#717f88;font-size:13px">2hours ago</span>
+                   <div class="col-md-12" style="border-bottom:1px solid #e1e8ed;padding-top:20px">
+                   </div>
+            <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border-bottom:1px solid #e1e8ed;padding:5px 0px 10px 0px">  
+                <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+               </div>
+               <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                    <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                    <img src="images/z11.png" /> 
+                    <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                     Loren ipsum has been the industry's standard dummy text.</p>  
+                    <span style="color:#0072bb;"># ever since the 1500S</span>  <br />
+                    <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                    <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                    <span style="color:#717f88">.</span>&nbsp;
+                    <span style="color:#717f88;font-size:13px">2hours ago</span>
+              </div>
+          </div> 
+          <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border-bottom:1px solid #e1e8ed;padding:5px 0px 10px 0px">  
+                <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z3.png" />
+               </div>
+               <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                   <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   <img src="images/z11.png" /> 
+                   <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                    Loren ipsum has been the industry's standard dummy text.</p>  
+                  <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> 
+                  <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                  <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">2hours ago</span>
+              </div>
+          </div> 
+          <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border-bottom:1px solid #e1e8ed;padding:5px 0px 10px 0px">  
+                <div class="col-md-1 col-sm-1 col-xs-1" style="padding:10px 0px 0px 0px">
+                    <img src="images/z5.png" />
+               </div>
+               <div class="col-md-11 col-sm-11 col-xs-11" style="padding:10px 12px 3px 10px">
+                   <h4 style="display:inline;text-transform:capitalize">Zappl</h4> <span style="color:#92a1ad">@new_zappl</span>
+                   <img src="images/z11.png" /> 
+                   <p style="color:#292f33;margin: 0 0 0px;line-height:19px">Loren ipsum is simply dummy text of the printing and typesetting industry.                    Loren ipsum has been the industry's standard dummy text.</p>  
+                  <span style="color:#0072bb;"># ever since the 1500S</span>  <br /> 
+                  <img src="images/z11.png" /> <span style="color:#717f88;font-size:13px">$235.66</span> &nbsp;&nbsp;
+                  <img src="images/z12.png" /> <span style="color:#717f88;font-size:13px">$235</span>&nbsp;
+                  <span style="color:#717f88">.</span>&nbsp;
+                  <span style="color:#717f88;font-size:13px">2hours ago</span>
+              </div>
+         </div> 
+    </div>  
+</div>
+  <div class="modal-footer" style="border-top:0px">
+  </div>
+   </div>
+ </div>
+</div>
+<!-----Modal------------------>  
+  
+  
+    
+   
+</div>
+<!---container----->
+
+</body>
+</html>

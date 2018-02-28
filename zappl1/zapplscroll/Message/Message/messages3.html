@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Messages</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--
+monopoly, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+Download: http://zypopwebtemplates.com/
+
+License: Creative Commons Attribution
+//-->
+<script>$('#myModal').on('shown.bs.modal', function () {
+    var width = $(window).width();  
+    if(width < 480){
+        $(this).hide(); 
+    }
+});
+</script>
+
+
+<style>
+.talk-bubble {
+	margin: 24px;
+    display: inline-block;
+    position: relative;
+	width:100%;
+	height: auto;
+	background-color: #99c4df;
+}
+
+.talk-bubble1 {
+	margin: 24px;
+    display: inline-block;
+    position: relative;
+	width:100%;
+	height: auto;
+	background-color: #ebebeb;
+}
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+
+}
+.border{
+  border: 8px solid #666;
+}
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -8px;
+    right: auto;
+    top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+	content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 34px solid;
+    border-color: transparent transparent transparent #99c4df;
+    border-radius: 7px;
+}
+/* talk bubble contents */
+.talktext{
+  padding: 2em;
+  text-align: left;
+  line-height: 1.5em;
+  color:#fff;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: 0px;
+	 bottom: -20px;
+    border: 34px solid;
+	border-color: #ebebeb #ebebeb transparent transparent;
+	border-radius: 7px;
+}
+
+.button_lay {
+    border-radius:25px;
+	padding:3px 20px;
+	outline:0px;
+	background-color:#b9d5e6;
+	border:1px solid #b9d5e6;
+	
+}
+
+@media screen and (max-width: 540px) {
+   .eleven_sec {
+	   display:none;
+   }
+	
+	
+}
+
+</style>
+
+
+
+</head>
+<body>
+<div id="container">
+<!------navbar------------->
+<nav class="navbar " style="border-radius:0px;overflow-y:hidden">
+  <div class="container">
+    <div class="navbar-header pad_left" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:15px">
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>                        
+      </button>
+      <a class="navbar-brand " href="#"><img src="images/8.png"  class="pull-left img_mar" /></a>
+      <form class="navbar-form navbar-left navbrand" style="margin-top:10px">
+           <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search Post..." style="-webkit-box-shadow:none !important">
+                  <div class="input-group-btn" >
+                      <button class="btn btn-default" type="submit" style="height:34px;border-left:0px">
+                         <i class="fa fa-search" style="color:#717f88"></i>
+                      </button>
+                 </div>
+          </div>
+       </form>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right col-md-6 col-sm-6 col-xs-6 text-center pad_right set_nav" >
+      
+        <li class="set_nav1 set_nav2"><img src="images/1.png" /><a href="home.html" style="color:#fff;">Home</a></li>
+        <li class="active set_nav1 set_nav3"><img src="images/2.png" /><a href="comments.html" style="color:#fff;">Comments</a></li>
+        <li class="set_nav1"><img src="images/3.png" /><a href="wallet.html" style="color:#fff;">Wallet</a></li>
+        <li class="set_nav1"><img src="images/4.png" /><a href="messages.html" style="color:#fff;border-bottom:5px solid #fff">Messages</a></li>
+        <li class="set_nav1 fifth_li"><img src="1/images/line1.png" style="margin-top:10px"></li>
+        <a href="profile.html"><li class="set_nav1"><img src="images/z5.png" style="margin-top:6px" /></li></a>
+        
+        <a href="setting_public_profile.html"><li class="set_nav1"><img src="images/6.png" style="margin-top:10px" /></li></a>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!------navbar------------->
+
+
+<div id="body" class="width">
+<!------------------------------------------------------------------first side section---------------------------------------------------------------->
+<aside class="sidebar small-sidebar left-sidebar eleven_sec" style="margin-top:-9px">
+   <ul>
+     <li>
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec" > 
+         <h4 style="color:#66757f;text-transform:capitalize">Messages</h4>        
+              
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec1">
+               <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                     <img src="images/z5.png" width="40" height="37" />
+               </div>
+            <a href="#myModal" data-toggle="modal"> <div class="col-md-10 col-sm-10 col-xs-10" style="padding:5px 3px 5px 10px" style="outline:0" >
+                     <h5 class="headfive">Zappl</h5> 
+                     <p style="color:#66757f;margin: 0 0 0px;line-height:19px;">Loren ipsum is simply dummy text of the printing and typesetting industry.                      </p>
+              </div></a>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec1">
+               <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                     <img src="images/z3.png" width="40" height="37" />
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10" style="padding:5px 3px 5px 10px">
+                     <h5 class="headfive">Zappl</h5> 
+                     <p style="color:#66757f;margin: 0 0 0px;line-height:19px;">Loren ipsum is simply dummy text of the printing and typesetting industry.                      </p>
+               </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec1">
+               <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                     <img src="images/z3.png"  width="40" height="37" />
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10" style="padding:5px 3px 5px 10px">
+                     <h5 class="headfive">Zappl</h5> 
+                     <p style="color:#66757f;margin: 0 0 0px;line-height:19px;">Loren ipsum is simply dummy text of the printing and typesetting industry.                      </p>
+               </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec1">
+               <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                     <img src="images/z5.png"  width="40" height="37" />
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10" style="padding:5px 3px 5px 10px">
+                     <h5 class="headfive">Zappl</h5> 
+                     <p style="color:#66757f;margin: 0 0 0px;line-height:19px;">Loren ipsum is simply dummy text of the printing and typesetting industry.                      </p>
+               </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec1">
+               <div class="col-md-2 col-sm-2 col-xs-2" style="padding:10px 0px 0px 0px">
+                     <img src="images/z3.png"  width="40" height="37" />
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10" style="padding:5px 3px 5px 10px">
+                     <h5 class="headfive">Zappl</h5> 
+                     <p style="color:#66757f;margin: 0 0 0px;line-height:19px;">Loren ipsum is simply dummy text of the printing and typesetting industry.                      </p>
+               </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec1" style="padding:7px 15px"> 
+              <span style="color:#66757f">Show more...</span>
+        </div>
+    </li>
+    <li> 
+        <div class="col-md-12 col-sm-12 col-xs-12 div_sec"  style="margin-top:20px;border-radius:5px;padding:10px 15px"> 
+           <p style="color:#ccd6dd;font-size:12px">@ 2017 zappl About Help Center Terms<br />
+           Privacy Polocy Cookies Ads Info Brand <br />
+           Blog Status AppsJobs Business Developers</p>   
+        </div>
+    </li>
+</ul>  
+
+</aside>
+<!-------------------------------------------------------------------first side section----------------------------------------------------------------->
+
+<!------------------------------------------------------------------second section----------------------------------------------------------------------><section id="content" class="Two_column" style="margin-top:-9px">
+   <article>
+      <div class="col-md-12 col-sm-12 col-xs-12 div_sec1" style="border-radius:5px 5px 0px 0px;padding-top:10px;border-bottom:0px;position:relative;background-color:#b9d5e6;padding-bottom:10px" > 
+          <div class="col-md-1 col-xs-2">
+             <img src="images/z5.png"  width="40" height="37" />
+          </div>
+          <div class="col-md-4 col-xs-7">
+             <h4 style="color:#fff;margin-bottom:0px;margin-top:3px">Zappl Development</h4>
+             <a href="#part"><span id="myspan" style="font-size:14px;font-weight:bold;color:#fff"> > </span> </a>
+             <a href="#part"><span id="myspan1" style="font-size:14px;font-weight:bold;color:#fff;display:none"> v </span></a>
+             <span style="font-size:14px;color:#fff">10 Participants</span> <br>
+          </div>
+          <div class="col-md-4 ">
+          </div>
+          <div class="col-md-3 col-xs-3 text-right">
+              <div class="dropdown" style="margin-top:4px">
+                <img src="images/z9.png" style="vertical-align:-webkit-baseline-middle;vertical-align:-moz-baseline-middle" />
+                   <div class="dropdown-content">
+                       <div class="desc"><a href="#">Feed</a></div>
+                       <div class="desc"><a href="#">New</a></div>
+                       <div class="desc"><a href="#">Hot</a></div>
+                       <div class="desc"><a href="#">Trending</a></div>
+                   </div>
+             </div>
+          </div>   
+      </div>
+      
+      <div id="part" class="col-md-12" style="padding:20px 15px;background-color:#fff;border:1px solid #eee;display:none">
+        <button type="button" class="btn btn-info button_lay" ><img src="images/online_icon.png" width="20" height="20">&nbsp;Ankit Mobdev</button>
+        <button type="button" class="btn btn-info button_lay" ><img src="images/offline_icon.png" width="20" height="20">&nbsp; Ajay Apptech</button>
+        <button type="button" class="btn btn-info button_lay" ><img src="images/online_icon.png" width="20" height="20">&nbsp;Chaitanya Apptech</button>
+        <button type="button" class="btn btn-info button_lay" ><img src="images/online_icon.png" width="20" height="20">&nbsp;Suraj Apptech</button> <br> <br>
+        <button type="button" class="btn btn-info button_lay" ><img src="images/offline_icon.png" width="20" height="20">&nbsp;Pratik Apptech</button> 
+        <button type="button" class="btn btn-info button_lay" ><img src="images/online_icon.png" width="20" height="20">&nbsp;Nikita Apptech</button>
+         <button type="button" class="btn btn-info button_lay"><img src="images/online_icon.png" width="20" height="20">&nbsp;Bhawna Apptech</button>
+     </div>
+     
+    
+     
+   
+     
+      
+   
+      <div class="col-md-12 col-sm-12 col-xs-12 div_sec1" style="border-radius:0px;padding-top:17px;border-bottom:0px;position:relative" > 
+          <div class="col-md-7">
+             <div class="talk-bubble tri-right round btm-left">
+                <div class="talktext">
+                    <p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+                </div>
+            </div>
+          </div> 
+     </div> 
+     
+     
+    <div class="col-md-12 col-sm-12 col-xs-12 div_sec1" style="border-radius:0px 0px 5px 5px;padding-top:17px;border-bottom:0px;padding-bottom:30px" > 
+        <div class="col-md-7 col-md-offset-4">  
+          <div class="talk-bubble1 round tri-right btm-right">
+              <div class="talktext">
+                 <p style="color:#66758f">And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+              </div>
+          </div>
+        </div>
+    </div>       
+
+       
+       
+      <div class="col-md-12 col-sm-12 col-xs-12 div_sec1" style="border-radius:0px 0px;padding-top:30px;border-bottom:0px;position:relative" > 
+             <div class="col-md-10 col-sm-10 col-xs-12" style="padding-top:7px;padding:6px 0px 3px 7px">
+                <input type="text" id="email2" class="form-control" placeholder="Write your zap..." style="padding:15px 0px 41px 15px" >
+                <span class="fa fa-camera form-control-feedback" style="padding-right:0px;line-height:47px;color:#717f88;margin-top:26px"></span>
+             </div>
+            <div class="col-md-2 col-sm-2 col-xs-12" style="padding-top:7px;padding:6px 0px 3px 7px">
+              <button type="button" class="btn button_layout" style="padding:7px 30px !important"><span style="color:3292f33;font-weight:600">Post</span></button>
+            </div>
+     </div> 
+     <div class="col-md-12 col-sm-12 col-xs-12 div_sec1" style="border-radius:0px 0px 5px 5px;padding-top:10px;border-bottom:0px;position:relative;padding-bottom:30px;padding-left:20px" > 
+        <img src="chat_ic/image.png" width="30" height="30"> &nbsp;&nbsp;&nbsp;
+        <img src="chat_ic/video.png" width="30" height="30"> &nbsp;&nbsp;&nbsp;
+        <img src="chat_ic/audio.png" width="30" height="30"> &nbsp;&nbsp;&nbsp;
+        <img src="chat_ic/files.png" width="30" height="30"> &nbsp;&nbsp;&nbsp;
+        <a href="#myModal99" data-toggle="modal"> <img src="chat_ic/add-conversation.png" width="30" height="30"></a>
+        
+
+     </div> 
+      
+      
+       
+      </article>
+</section>
+
+<!------------------------------------------------------------------second section---------------------------------------------------------------------->
+ <div class="clear"></div>
+    </div>
+    
+
+
+
+ <script>
+        $(document).ready(function(){
+             $("#myspan").click(function(){
+                   $("#part").show(500);
+		           $("#myspan").hide();
+		           $("#myspan1").show();
+		
+            });
+	
+	       $("#myspan1").click(function(){
+                   $("#part").hide(500);
+	               $("#myspan1").hide();
+		           $("#myspan").show();
+         	});
+	    });
+ </script>
+ 
+ 
+ <!-- Modal -->
+  <div class="modal fade" id="myModal99" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0px;padding-top:15px">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <center><h5>Add Group Members</h5></center>
+        </div>
+        <div class="modal-body" style="padding:5px 25px"> 
+            <div class="col-md-12" style="border:1px solid #eee;height:50px">   
+               <div class="col-md-1 col-xs-4" style="padding-top:10px">
+                 <input type="checkbox">
+               </div>
+               <div class="col-md-2 col-xs-4" style="padding-top:5px">
+                   <img src="images/z5.png" width="40" height="37">
+               </div>
+               <div class="col-md-3 col-xs-4" style="padding-top:5px">
+                  <h6>Zappl</h6>
+               </div>
+            </div>  
+            <div class="col-md-12" style="border:1px solid #eee;height:50px">   
+               <div class="col-md-1 col-xs-4" style="padding-top:10px">
+                 <input type="checkbox">
+               </div>
+               <div class="col-md-2 col-xs-4" style="padding-top:5px">
+                   <img src="images/z5.png" width="40" height="37">
+               </div>
+               <div class="col-md-3 col-xs-4" style="padding-top:5px">
+                  <h6>Zappl</h6>
+               </div>
+            </div>    
+            <div class="col-md-12" style="border:1px solid #eee;height:50px">   
+               <div class="col-md-1 col-xs-4" style="padding-top:10px">
+                 <input type="checkbox">
+               </div>
+               <div class="col-md-2 col-xs-4" style="padding-top:5px">
+                   <img src="images/z5.png" width="40" height="37">
+               </div>
+               <div class="col-md-3 col-xs-4" style="padding-top:5px">
+                  <h6>Zappl</h6>
+               </div>
+            </div>    
+            
+        </div>
+        <div class="modal-footer" style="border-top:0px;margin-top:20px">
+         <center><button type="button" class="btn button_layout" style="color:3292f33;font-weight:600">Add Member</button></center>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+    
+    
+    
+    
+    
+   
+</div>
+
+
+</body>
+</html>

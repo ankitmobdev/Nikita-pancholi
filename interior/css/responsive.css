@@ -1,0 +1,166 @@
+@media screen and (max-width: 1024px) {
+ #header .header-content {
+ width: 90%;
+ padding: 40px 0;
+}
+ #header.fixed a {
+ color: #fff;
+}
+ .nav-toggle {
+ display: block;
+}
+ .navigation {
+ position: fixed;
+ background-color: #000;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ z-index: 99999;
+ visibility: hidden;
+ opacity: 0;
+ -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+ transition: opacity 0.5s, visibility 0s 0.5s;
+}
+ .navigation .primary-nav {
+ position: relative;
+ top: 45%;
+ -moz-transform: translateY(-45%);
+ -ms-transform: translateY(-45%);
+ -webkit-transform: translateY(-45%);
+ transform: translateY(-45%);
+}
+ .navigation li {
+ display: block;
+ margin-bottom: 20px;
+}
+ .navigation a {
+ display: block;
+ font-size: 25px;
+ margin: 0;
+ text-align: center;
+}
+ .person {
+ margin: 0 auto 50px;
+}
+ .person-content {
+ text-align: center;
+}
+ .person .social-icons li {
+ display: inline-block;
+ float: none;
+ margin-bottom: 5px;
+}
+ .testimonials blockquote {
+ padding: 20px 5% 0;
+}
+ .testimonials p {
+ font-size: 12px;
+}
+ .flex-control-nav {
+ bottom: 20px;
+}
+}
+@media screen and (max-width: 768px) {
+ .banner-text {
+ padding-top: 30%;
+}
+ .banner-text h1 {
+ font-size: 42px;
+}
+ .banner-text p {
+ font-size: 18px;
+}
+ .flexslider {
+ padding-bottom: 80px;
+}
+ .flex-control-nav {
+ width: 100%;
+}
+ .footer .footer-col {
+ margin-bottom: 50px;
+}
+}
+@media screen and (max-width: 640px) {
+ .banner-text {
+ padding-top: 35%;
+}
+ .testimonials p {
+ font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+ .banner-text {
+ padding-top: 45%;
+}
+ .banner-text h1 {
+ font-size: 32px;
+}
+ .testimonials p {
+ font-size: 12px;
+}
+@media screen and (max-width: 320px) {
+ .banner-text {
+ padding-top: 55%;
+}
+ .testimonials blockquote {
+ padding: 20px 5% 0;
+}
+ .testimonials p {
+ font-size: 12px;
+}
+}
+
+@media screen and (max-width: 540px) {
+	.i1 {
+	border: 1px solid #fff;
+    padding: 10px;
+	color:#fff !important;
+    }
+	.prague-social-nav a {
+	   border:none !important
+    }
+   .social-content 
+    {    
+	display: block;
+    text-align: -webkit-center !important;
+	margin-top:20px !important;
+   }
+	.navigation a {
+     color: #fff !important;
+	}
+	.navbar-fixed-top .navbar-collapse {
+    background-color: black !important;
+    margin-top:40px !important;
+    text-align: -webkit-center !important;
+    height: 100vh !important;
+    }
+	.fade-carousel .slides .slide-2 p {
+	  margin-bottom:26px !important;	
+	}
+	.fade-carousel .slides .slide-3 p {
+	  margin-bottom:26px !important;	
+	}
+	.fade-carousel .slides .slide-4 p {
+	  margin-bottom:26px !important;	
+	}
+	.prague-counter.multi_item .numbers svg mask .number {
+    font-size: 45px !important;
+    }
+	.prague-counter .numbers svg mask .title {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    }
+	#services1 {
+		margin-top:-198px !important;
+	}
+	.hero h3 {
+    font-size: 1.3em !important;
+    line-height: 25px !important;
+	}
+	..nav>li>a {
+		color:#fff !important;
+	}
+	
+}
+	

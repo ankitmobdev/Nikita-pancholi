@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Setting</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--
+monopoly, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+Download: http://zypopwebtemplates.com/
+
+License: Creative Commons Attribution
+//-->
+
+<script>
+$(document).ready(function(){
+    $("#1").click(function(){
+        $(".first_show").show();
+        $(".second_show").hide();
+		$(".third_show").hide();
+       });
+	 $("#2").click(function(){
+        $(".second_show").show();
+        $(".first_show").hide();
+		$(".third_show").hide();
+       });
+	   $("#3").click(function(){
+        $(".third_show").show();
+		$(".second_show").hide();
+        $(".first_show").hide();
+       });   
+	   
+	   
+	   
+});
+</script>
+<script>
+function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+
+
+</script>
+</head>
+<body>
+<div id="container">
+<!------navbar------------->
+<nav class="navbar " style="border-radius:0px;overflow-y:hidden">
+  <div class="container">
+    <div class="navbar-header pad_left" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:15px">
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>
+        <span class="icon-bar" style="background-color:#fff"></span>                        
+      </button>
+      <a class="navbar-brand " href="#"><img src="images/8.png"  class="pull-left img_mar" /></a>
+      <form class="navbar-form navbar-left navbrand" style="margin-top:10px">
+           <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search Post..." style="-webkit-box-shadow:none !important">
+                  <div class="input-group-btn" >
+                      <button class="btn btn-default" type="submit" style="height:34px;border-left:0px">
+                         <i class="fa fa-search" style="color:#717f88"></i>
+                      </button>
+                 </div>
+          </div>
+       </form>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right col-md-6 col-sm-6 col-xs-6 text-center pad_right set_nav" >
+      
+        <li class="set_nav1 set_nav2"><img src="images/1.png" /><a href="home.html" style="color:#fff;">Home</a></li>
+        <li class="set_nav1 set_nav3"><img src="images/2.png" /><a href="comments.html" style="color:#fff;">Comments</a></li>
+        <li class="set_nav1"><img src="images/3.png" /><a href="wallet.html" style="color:#fff;">Wallet</a></li>
+        <li class="set_nav1"><img src="images/4.png" /><a href="messages.html" style="color:#fff;">Messages</a></li>
+        <li class="set_nav1 fifth_li"><img src="1/images/line1.png" style="margin-top:10px"></li>
+        <a href="profile.html"><li class="set_nav1"><img src="images/z5.png" style="margin-top:6px" /></li></a>
+        
+        <a href="setting_public_profile.html"><li class="active set_nav1"><img src="images/6.png" style="margin-top:10px;" /></li></a>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!------navbar------------->
+<div id="body" class="width">
+
+<!--------------------------------------------------------------first side section--------------------------------------------------------------->
+<aside class="sidebar small-sidebar left-sidebar" style="margin-top:0px">
+       <ul>	
+          <li style="margin-bottom:0px">
+              <ul>
+                  <div class="col-md-12 " style="padding:0px">
+                   <li style="border-radius:5px 5px 0px 0px;width:100%;height:120px;list-style-type:none !important;background-image:url(1/images/gr_1.png);background-repeat:no-repeat;background-size:cover;margin-left:-2px">
+                   </li>
+          
+                   <li class="text-center" style="background-color:#fff;border-bottom:1px solid #e5ebef;text-align:-webkit-center;text-align:-moz-center;list-style-type:none !important;border-left:2px solid #e1e8ed;border-right:2px solid #e1e8ed;margin-top:-10px;">
+                  <img src="images/z8.png" height="113" width="115" class="img-responsive" style="z-index:1;margin-top:-70px;"/>
+                  <h3 style="color:#292f33;margin-bottom:0px">Zappl</h3>
+                  <span style="color:#8899a6">@zappl_zappl</span>
+                  </li>
+                  
+            
+           </ul>    
+       </li>
+       <li> 
+            <div class="col-md-12 col-sm-12 col-xs-12 div_setting" style="margin-top:12px;border-radius:5px 5px 0px 0px;border:1px solid #e1e8ed;padding:5px 15px"> 
+              <a href="#"><h5 id="1" style="color:#3e4549;font-weight:600;margin-bottom:0px;display:inline">Public Profile settings</h5></a> 
+              <img src="images/black arrow.png" class="pull-right" style="margin-top:4px">
+           </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 div_setting " style="border:1px solid #e1e8ed;border-top:0px;padding:5px 15px" > 
+              <a href="#"><h5 id="2" style="color:#8899a6;font-weight:600;margin-bottom:0px;display:inline">Security</h5></a> 
+              <img src="images/grey arrow.png" class="pull-right" style="margin-top:4px">
+           </div>
+           <div class="col-md-12 col-sm-12 col-xs-12 div_setting" style="border:1px solid #e1e8ed;border-top:0px;padding:5px 15px"> 
+              <a href="#"><h5 id="3" style="color:#8899a6;font-weight:600;margin-bottom:0px;display:inline">Configurations</h5> </a>
+              <img src="images/grey arrow.png" class="pull-right" style="margin-top:4px">
+           </div>
+           
+       </li> 
+       <li> 
+            <div class="col-md-12 col-sm-12 col-xs-12 div_sec "  style="margin-top:12px;border-radius:5px;padding:10px 15px"> 
+               <p style="color:#ccd6dd;font-size:12px">@ 2017 zappl About Help Center Terms<br />
+               Privacy Polocy Cookies Ads Info Brand <br />
+               Blog Status AppsJobs Business Developers</p>   
+           </div>
+       </li> 
+     </ul>
+  </li>
+</ul>
+</aside>
+<!--------------------------------------------------------------------------------------first side section------------------------------------------>
+
+
+<!--------------------------------------------------------------------------------------second section------------------------------------------>		
+<section id="content" class="Two_column first_show"  >
+   <article>
+      <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-radius:5px 5px 0px 0px"> 
+         <h4 class="text_com">Settings</h4>        
+              
+      </div>  
+      
+      <div class="col-md-12 col-sm-12 col-xs-12 division_col2" style="border-radius:0px 0px 5px 5px;padding:8px 15px ">   
+         <h5 style="color:#3e4549;font-weight:600">PUBLIC PROFILE SETTINGS</h5> 
+               <div class="col-md-8 pad_zero " >
+                    <div class="form-group">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="Display Name" style="padding:25px 20px">
+                    </div>
+                    <div class="form-group">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="About" style="padding:25px 20px">
+                    </div>
+                    <div class="form-group">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="Location" style="padding:25px 20px">
+                    </div>
+                    <div class="form-group">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="Website" style="padding:25px 20px">
+                    </div> 
+               </div>
+               <div class="col-md-12 pad_zero">     
+                 <div class="col-md-8 pad_zero">    
+                    <div class="form-group">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="Profile Image" style="padding:25px 20px">
+                    </div>  
+                 </div>    
+                 <div class="col-md-4 pad_zero">    
+                          <button type="button" class="btn button_layout" style="color:3292f33;font-weight:600">Upload</button>
+                  </div>  
+               </div>
+               
+               <div class="col-md-12 pad_zero">   
+                   <button type="button" class="btn button_layout" style="color:3292f33;font-weight:600">Update</button>
+               </div>  
+                   
+       </div>
+     </article>
+</section>
+
+<section id="content" class="Two_column second_show" style="display:none" >
+   <article>
+      <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-radius:5px 5px 0px 0px"> 
+         <h4 class="text_com">Settings</h4>        
+              
+      </div>  
+      
+      <div class="col-md-12 col-sm-12 col-xs-12 division_col2" style="border-radius:0px 0px 5px 5px;padding-bottom:30px">   
+         <h5 style="color:#3e4549;font-weight:600;margin-bottom:0px">CHANGE PASSWORD</h5> 
+               <div class="col-md-8 pad_zero " >
+                    <span style="color:#66757f">The first rule of Steemit is:Do not lose your password.</span><br>
+                    <span style="color:#66757f">The second rule of Steemit is:Do not lose your password.</span><br>
+                    <span style="color:#66757f">The third rule of Steemit is:We cannot recover your password.</span><br>
+                    <span style="color:#66757f">The fourth rule of Steemit is:If you can remember the password,it's not secure.</span><br>
+                    <span style="color:#66757f">The fifth rule of Steemit is:Use only randomly generated password.</span><br>
+                    <span style="color:#66757f">The sixth rule of Steemit is:Do not tell anyone your password.</span><br>
+                    <span style="color:#66757f">The seventh rule of Steemit is:Always backup your password.</span><br>  <br>
+                    <div class="form-group">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="Account Name" style="padding:25px 20px">
+                    </div>
+                    <div class="form-group">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="Current Password" style="padding:25px 20px">
+                    </div>
+                    <button type="button" class="btn button_layout" style="padding:7px 25px !important"><span style="color:3292f33;font-weight:600">Generate password</span></button> <br>
+                    <div class="form-group" style="margin-top:10px">
+                       <input type="text" class="form-control textbox_field" id="email2" placeholder="Re-Enter Generated password" style="padding:25px 20px">
+                    </div>
+                     <div class="form-group">
+                        <input type="checkbox"> <span style="color:#66757f">I understand that steemit cannot recover lost password</span> <br>
+                     </div>
+                     <div class="form-group">
+                        <input type="checkbox"> <span style="color:#66757f">I have securely saved my generated password.</span> <br>
+                     </div>
+                     <button type="button" class="btn button_layout" style="padding:7px 28px !important"><span style="color:3292f33;font-weight:600">Update password</span></button> <br>
+                   
+       </div>
+     </article>
+</section>
+
+
+<section id="content" class="Two_column third_show"  style="display:none" >
+   <article>
+      <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:#fff;border:1px solid #e1e8ed;border-radius:5px 5px 0px 0px"> 
+         <h4 class="text_com">Settings</h4>        
+              
+      </div>  
+      
+      <div class="col-md-12 col-sm-12 col-xs-12 division_col2" style="border-radius:0px 0px 5px 5px;padding-bottom:238px">   
+         <h5 style="color:#3e4549;font-weight:600">CONFIGURATIONS</h5> 
+               <div class="col-md-8 pad_zero "  >
+                    <div style="background-color:#fff;border:1px solid #ccc;border-radius:5px;padding:12px 0px 38px 0px;margin-bottom:40px">
+                           <div class="col-md-3 col-sm-3 col-xs-4">
+                             <span style="color:#8899a6;font-weight:500">Voting (%)</span>
+                           </div>
+                           <div class="col-md-8 col-sm-8 col-xs-6" style="padding-top:6px">
+                              <form name="registrationForm" >
+                                  <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value" style="border:none">  
+                              </form> 
+                           </div>
+                          <div class="col-md-1 col-sm-1 col-xs-6" style="padding-top:6px">
+                                 <output name="ageOutputName" id="ageOutputId" style="display:inline">24</output>
+                          
+                          </div>            
+                               
+                  </div>
+                           
+                           
+                          
+                       
+                       
+                       
+                  
+                  
+                    
+                   <!-- <div class="form-group"> 
+                       <select class="form-control" id="sel1" style="color:#8899a6;height:50px">
+                                 <option style="color:#8899a6">Languages</option>
+                                 <option style="color:#8899a6">Languages</option>
+                                 <option style="color:#8899a6">Languages</option>
+                                 <option style="color:#8899a6">Languages</option>
+                       </select>
+                    </div>  
+                    <div class="form-group"> 
+                       <select class="form-control" id="sel1" style="color:#8899a6;height:50px">
+                                 <option style="color:#8899a6">Currency</option>
+                                 <option style="color:#8899a6">Currency</option>
+                                 <option style="color:#8899a6">Currency</option>
+                                 <option style="color:#8899a6">Currency</option>
+                       </select>
+                    </div>  <br>-->
+                    
+                  
+                   <button type="button" class="btn button_layout" style="padding:7px 22px !important;color:3292f33;font-weight:600;margin-top:30px">Save Changes</button> 
+       </div>
+        </div>
+     </article>
+</section>
+<!--------------------------------------------------------------------------------------first side section------------------------------------------>
+
+<div class="clear"></div>
+    </div>
+   
+</div>
+
+
+</body>
+</html>
